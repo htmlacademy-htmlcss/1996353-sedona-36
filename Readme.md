@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Наиль Ахунзянов](https://up.htmlacademy.ru/htmlcss/36/user/1996353).
-* Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
+* Наставник: [Оксана Вайнруб ](https://htmlacademy.ru/profile/id166797).
 
 ---
 
