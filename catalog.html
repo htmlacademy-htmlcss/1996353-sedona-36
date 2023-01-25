@@ -53,9 +53,9 @@
           </fieldset>
 
           <h3>Стоимость, Р:</h3>
-          <input type="number" step="50" min="200" max="10000"> от
-          <input type="number" step="50" min="200" max="10000"> до
-          <input type="range" min="50" max="10000" step="50">
+          <input type="number" step="100" min="200" max="10000" name="number1"> от
+          <input type="number" step="100" min="200" max="10000" name="number2"> до
+          <input type="range" min="50" max="10000" step="100">
 
           <button class="button" type="submit">Применить</button>
           <button class="reset" type="reset">сбросить</button>
@@ -145,9 +145,11 @@
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       </div>
       <div class="subscribe-form">
-        <form action="https://echo.htmlacademy.ru" method="get"></form>
-        <input type="e-mail" placeholder="Ваш e-mail">
-        <button class="button" type="submit">подписаться</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="email" placeholder="Ваш e-mail" name="email" id="email">
+          <input type="submit" value="подписаться">
+        </form>
+
       </div>
     </section>
   </main>
