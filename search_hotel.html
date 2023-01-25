@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск гостиницы</title>
+</head>
+<body>
+  <main class="searh-hotel">
+    <h2>Поиск гостиницы в Седоне</h2>
+    <form action="https://echo.htmlacademy.ru" method="get">
+
+      <label> Дата Заезда:
+        <input type="date" name="entry" id="entry">
+      </label>
+      <br>
+
+
+      <label for="exit"> Дата Выезда:</label>
+      <input type="date" name="exit" id="exit"><br>
+
+      <label for="adult">Взрослые</label>
+      <input type="number" name="adult" id="adult" min="1">
+      <label for="kinder">Дети</label>
+      <input type="number" name="kinder" id="kinder" min="0">
+      <button type="submit">Найти</button>
+
+
+    </form>
+  </main>
+
+</body>
+</html>
