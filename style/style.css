@@ -6,7 +6,7 @@ body {
 }
 
 container.nav {
-  width: 100%;
+  width: 1200px;
   outline: 1px solid red;
   height: 64px;
   display: flex;
@@ -24,6 +24,7 @@ container img {
   vertical-align: center;
   height: 64px;
   list-style: none;
+  text-decoration: none;
 }
 
 .link a {
