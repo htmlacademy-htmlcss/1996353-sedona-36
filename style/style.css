@@ -12,7 +12,7 @@ container.nav {
   display: flex;
 }
 
-container img {
+container img:first-child {
   margin-right: 30px;
   margin-left: 70px;
 }
