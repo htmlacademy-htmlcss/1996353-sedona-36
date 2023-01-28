@@ -30,20 +30,32 @@ container img:first-child {
   font-weight: 600;
 }
 
-.link a {
-  font-size: 16px;
-  padding:  16px;
-}
-
 .customs-menu {
   width: 268px;
   display: grid;
   grid-template-columns: 20px 20px 160px;
+  padding-left: 0;
   margin-left: 145px;
+  margin-right: auto;
   list-style: none;
 }
 
- a.button {
+.link a {
+  font-size: 16px;
+  padding:  16px;
+
+}
+
+link {
+
+}
+
+.customs-menu img {
+  margin: 0;
+}
+
+ .button {
+
   width: 160px;
   font-size: 16px;
   padding: 8px 26px;
@@ -51,5 +63,7 @@ container img:first-child {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: 100px;
+  margin-left: 200px;
+  margin-right: 70px;
+  margin-bottom: 40px;
 }
