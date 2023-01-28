@@ -20,33 +20,36 @@ container img {
 .links {
   width: 339px;
   display: grid;
-  grid-template-columns: 100px 124px 125px;
-  vertical-align: center;
+  grid-template-columns: 100px 114px 125px;
   height: 64px;
   list-style: none;
   text-decoration: none;
+  padding-left: 0;
+  padding-top: 22px;
+  margin: 0;
+  font-weight: 600;
 }
 
 .link a {
-  font-size: 20px;
-  padding: 20px 16px;
+  font-size: 16px;
+  padding:  16px;
 }
 
 .customs-menu {
+  width: 268px;
   display: grid;
   grid-template-columns: 20px 20px 160px;
-  vertical-align: center;
-  margin-left: 285px;
+  margin-left: 145px;
   list-style: none;
 }
 
-li button.button {
+ a.button {
+  width: 160px;
   font-size: 16px;
   padding: 8px 26px;
-  margin-top: auto;
-  margin-bottom: auto;
   background-color: rgb(51, 36, 36);
   color: white;
   font-weight: 700;
   text-transform: uppercase;
+  margin-left: 100px;
 }
