@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(227, 238, 236);
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+container.nav {
+  width: 100%;
+  outline: 1px solid red;
+  height: 64px;
+  display: flex;
+}
+
+.links {
+  width: 339px;
+  display: grid;
+  grid-template-columns: 100px 124px 125px;
+  vertical-align: center;
+  height: 64px;
+  list-style: none;
+}
+
+.customs-menu {
+  display: grid;
+  grid-template-columns: 20px 20px 160px;
+  vertical-align: center;
+  margin-left: 285px;
+  list-style: none;
+}
+
+.link a {
+  font-size: 20px;
+  padding: 20px 16px;
+
+}
+
+.link a img {
+  color:rgb(51, 36, 36)
+}
+
+container img {
+  margin-right: 30px;
+  margin-left: 70px;
+}
+
+button.button {
+  font-size: 16px;
+  padding: 8px 26px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: rgb(51, 36, 36);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
