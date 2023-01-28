@@ -12,6 +12,11 @@ container.nav {
   display: flex;
 }
 
+container img {
+  margin-right: 30px;
+  margin-left: 70px;
+}
+
 .links {
   width: 339px;
   display: grid;
@@ -19,6 +24,11 @@ container.nav {
   vertical-align: center;
   height: 64px;
   list-style: none;
+}
+
+.link a {
+  font-size: 20px;
+  padding: 20px 16px;
 }
 
 .customs-menu {
@@ -36,12 +46,6 @@ container.nav {
 }
 
 
-
-container img {
-  margin-right: 30px;
-  margin-left: 70px;
-}
-
 button.button {
   font-size: 16px;
   padding: 8px 26px;
@@ -51,5 +55,4 @@ button.button {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
-
 }
