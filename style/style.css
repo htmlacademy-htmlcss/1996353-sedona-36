@@ -7,7 +7,6 @@ body {
 
 container.nav {
   width: 1200px;
-  outline: 1px solid red;
   height: 64px;
   display: flex;
 }
@@ -40,7 +39,7 @@ container.nav {
   margin-left: 295px;
   margin-right: 70px;
   list-style: none;
-  outline: 1px solid ;
+
 }
 
 
