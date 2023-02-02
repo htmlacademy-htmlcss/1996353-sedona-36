@@ -75,9 +75,9 @@ container.nav {
 }
 
 .hero {
-  
-
+  display: block;
   background-image: url("../img/Sedona-background.jpg");
   background-repeat: no-repeat;
+  outline: 1px solid blue;
 
 }
