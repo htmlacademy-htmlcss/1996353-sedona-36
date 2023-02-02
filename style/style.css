@@ -75,7 +75,9 @@ container.nav {
 }
 
 .hero {
+  
 
   background-image: url("../img/Sedona-background.jpg");
-  repeat: no-repeat;
+  background-repeat: no-repeat;
+
 }
