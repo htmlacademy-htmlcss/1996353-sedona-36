@@ -25,7 +25,12 @@
   font-display: swap;
 }
 
-
+.nav .link {
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: 700;
+}
 
 body {
   background-color: rgb(227, 238, 236);
@@ -35,7 +40,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-
 }
 
 container.nav {
@@ -109,6 +113,7 @@ container.nav {
 
 .hero {
   display: block;
+  background-color: #fff;
   background-image: url("../img/Sedona-background.jpg");
   background-repeat: no-repeat;
   outline: 1px solid blue;
