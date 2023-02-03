@@ -33,7 +33,7 @@
 }
 
 body {
- 
+
   background-color: rgb(227, 238, 236);
   margin: 0;
   padding: 0;
@@ -43,7 +43,7 @@ body {
   color: #333333;
 }
 
-container.nav {
+ .nav {
   width: 1200px;
   height: 64px;
   display: flex;
