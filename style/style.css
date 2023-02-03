@@ -41,6 +41,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -120,7 +121,7 @@ body {
 }
 
 .hero {
-  display: block;
+  /* display: block; */
   background-color: #fff;
   background-image: url("../img/Sedona-background.jpg");
   background-repeat: no-repeat;
@@ -157,13 +158,33 @@ body {
 
 }
 
+.true-town,
+.bridge {
+  display: flex;
+}
+
+.white-block,
+.frame-3in1
+ {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 384px;
+
+}
+
+.white-block .frame-square {
+  background-color: rgba(201, 216, 226, 0.12);
+  color: #000000;
+}
+
+
 .frame-square {
   width: 400px;
   height: 384px;
   text-align: center;
   background-color: #82B3D3;
   color: #ffffff;
-
+  margin: 0;
   font-size: 18px;
 
 }
@@ -183,4 +204,8 @@ body {
   padding-top: 101px;
 }
 
-
+.short-string {
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
