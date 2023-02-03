@@ -125,16 +125,62 @@ body {
   background-image: url("../img/Sedona-background.jpg");
   background-repeat: no-repeat;
   outline: 1px solid blue;
+  height: 761px;
 
 }
 
 .hero img:first-child {
-  margin: 53px 371px 19px;
+  margin: 51px 371px 22px;
 }
 
 .frame-for-h2  h2 {
   font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.frame-for-h2  p {
+  font-size: 20px;
   line-height: 26px;
   font-weight: 400;
+  font-style: regular;
   text-align: center;
+  color: #333333;
 }
+
+.frame-for-h2 {
+  height: 261px;
+  padding: 40px 274.5px;
+
+}
+
+.frame-square {
+  width: 400px;
+  height: 384px;
+  text-align: center;
+  background-color: #82B3D3;
+  color: #ffffff;
+
+  font-size: 18px;
+
+}
+
+.frame-square h3,
+.frame-square p {
+  width: 230px;
+  text-align: center;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.frame-square h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  padding-top: 101px;
+}
+
+
