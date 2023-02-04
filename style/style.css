@@ -110,7 +110,7 @@ body {
 }
 
  .button {
-  width: 160px;
+
   font-size: 16px;
   padding: 8px 26px;
   background-color: rgb(51, 36, 36);
@@ -154,6 +154,7 @@ body {
 .frame-for-h2 {
   height: 261px;
   padding: 40px 274.5px;
+  text-align: center;
 
 }
 /* крупные блоки флексы гриды */
@@ -234,4 +235,68 @@ body {
   width: 60px;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
+}
+/* кнопка ПОИСК ГОСТИНИЦЫ В седоне*/
+.frame-for-h2 .button {
+font-style: normal;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+margin: 56px auto 94px;
+}
+/*section class="subscribe"  */
+.subscribe {
+  height: 415px;
+  background-image: url(../img/Subscribe-fog.png);
+}
+
+.subscribe-h2 h2 {
+  padding-top: 96px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe-h2  {
+  width: 475px;
+  margin: 96px auto 54px;
+  text-align: center;
+  color:#ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+
+}
+
+.subscribe-form {
+text-align: center;
+}
+
+.input-email {
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  width: 452px;
+  height: 52px;
+}
+.input-submit {
+  width: 232px;
+  height: 52px;
+  padding: 8px auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #82B3D3;
+  color: #ffffff;
+
 }
