@@ -34,7 +34,6 @@
 
 body {
 
-  background-color: rgb(227, 238, 236);
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
@@ -121,11 +120,9 @@ body {
 }
 
 .hero {
-  /* display: block; */
   background-color: #fff;
   background-image: url("../img/Sedona-background.jpg");
   background-repeat: no-repeat;
-  outline: 1px solid blue;
   height: 761px;
 
 }
