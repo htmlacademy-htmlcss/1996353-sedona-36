@@ -170,12 +170,28 @@ body {
 }
 
 
-
+/* фон для квадратов .frame-square*/
 .white-block .frame-square,
 .frame-3in1 .frame-square {
-  background-color:  rgba(131, 179, 211, 0.12);;
+  background-color:  rgba(131, 179, 211, 0.12);
   color: #333333;
 }
+
+.frame-square:nth-child(even) {
+  background-color:   rgba(131, 179, 211, 0.12);
+}
+
+.frame-square:nth-child(odd) {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
+.true-town .frame-square,
+.bridge .frame-square {
+  background-color: #82B3D3;
+}
+
+
+
 
 
 .frame-square {
