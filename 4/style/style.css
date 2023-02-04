@@ -34,7 +34,6 @@
 
 body {
 
-  background-color: rgb(227, 238, 236);
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
@@ -50,7 +49,7 @@ body {
   margin-right: auto;
 
 }
-
+/* header */
  .nav {
   width: 1200px;
   height: 64px;
@@ -90,7 +89,7 @@ body {
 }
 
 
-
+/* ссылки */
 .link {
   text-align: center;
   height: 64px;
@@ -111,7 +110,7 @@ body {
 }
 
  .button {
-  width: 160px;
+
   font-size: 16px;
   padding: 8px 26px;
   background-color: rgb(51, 36, 36);
@@ -120,20 +119,20 @@ body {
   text-transform: uppercase;
 }
 
+/* main */
 .hero {
-  /* display: block; */
   background-color: #fff;
   background-image: url("../img/Sedona-background.jpg");
   background-repeat: no-repeat;
-  outline: 1px solid blue;
   height: 761px;
+  margin-bottom: 5px;
 
 }
 
 .hero img:first-child {
   margin: 51px 371px 22px;
 }
-
+/* класс для широких подзаголовков H2 */
 .frame-for-h2  h2 {
   font-size: 30px;
   line-height: 36px;
@@ -155,9 +154,10 @@ body {
 .frame-for-h2 {
   height: 261px;
   padding: 40px 274.5px;
+  text-align: center;
 
 }
-
+/* крупные блоки флексы гриды */
 .true-town,
 .bridge {
   display: flex;
@@ -169,16 +169,43 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 384px;
-
 }
 
-.white-block .frame-square {
-  background-color: rgba(201, 216, 226, 0.12);
-  color: #000000;
+
+/* фон для квадратов .frame-square*/
+.white-block .frame-square,
+.frame-3in1 .frame-square {
+  background-color:  rgba(131, 179, 211, 0.12);
+  color: #333333;
 }
+
+.icons-comfort {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+.frame-square:nth-child(even) {
+  background-color:   rgba(131, 179, 211, 0.12);
+}
+
+.frame-square:nth-child(odd) {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
+.true-town .frame-square,
+.bridge .frame-square {
+  background-color: #82B3D3;
+}
+
+
+
 
 
 .frame-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   height: 384px;
   text-align: center;
@@ -201,11 +228,75 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  padding-top: 101px;
+  /* padding-top: 100px; */
 }
 
 .short-string {
   width: 60px;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
+}
+/* кнопка ПОИСК ГОСТИНИЦЫ В седоне*/
+.frame-for-h2 .button {
+font-style: normal;
+font-size: 20px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+margin: 56px auto 94px;
+}
+/*section class="subscribe"  */
+.subscribe {
+  height: 415px;
+  background-image: url(../img/Subscribe-fog.png);
+}
+
+.subscribe-h2 h2 {
+  padding-top: 96px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe-h2  {
+  width: 475px;
+  margin: 96px auto 54px;
+  text-align: center;
+  color:#ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+
+}
+
+.subscribe-form {
+text-align: center;
+}
+
+.input-email {
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  width: 452px;
+  height: 52px;
+}
+.input-submit {
+  width: 232px;
+  height: 52px;
+  padding: 8px auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #82B3D3;
+  color: #ffffff;
+
 }
