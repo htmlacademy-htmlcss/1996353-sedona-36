@@ -170,6 +170,16 @@ padding-top: 20px;
 .frame-for-h2:nth-child(1) {
   padding-bottom: 8px;
 }
+/* Заинтересовались */
+.interest {
+  height: 406px;
+}
+
+.interest h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
 /* крупные блоки флексы гриды */
 .true-town,
 .bridge {
@@ -214,9 +224,6 @@ padding-top: 20px;
 }
 
 
-
-
-
 .frame-square {
   display: flex;
   flex-direction: column;
@@ -229,8 +236,6 @@ padding-top: 20px;
   margin: 0;
   font-size: 18px;
 }
-
-
 
 .frame-square h3,
 .frame-square p {
@@ -261,16 +266,17 @@ display: flex;
 align-items: center;
 text-align: center;
 text-transform: uppercase;
-margin: 56px auto 94px;
+margin: 50px auto 94px;
 }
 /*section class="subscribe"  */
 .subscribe {
+  border-top: 1px solid #76c0d6;
   height: 415px;
   background-image: url(../img/Subscribe-fog.png);
 }
 
 .subscribe-h2 h2 {
-  padding-top: 96px;
+  padding-top: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -281,7 +287,7 @@ margin: 56px auto 94px;
 
 .subscribe-h2  {
   width: 475px;
-  margin: 96px auto 54px;
+  margin: 96px auto 45px;
   text-align: center;
   color:#ffffff;
   font-weight: 400;
@@ -299,13 +305,18 @@ text-align: center;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  width: 452px;
+  width: 430px;
   height: 52px;
+  border-radius: 5px;
+  margin-right: 0;
+
 }
 .input-submit {
-  width: 232px;
+  width: 230px;
   height: 52px;
-  padding: 8px auto;
+  margin-left: 0;
+  border-radius: 5px;
+  padding: 9px auto;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -322,18 +333,17 @@ text-align: center;
 .footer {
   width: 1200px;
   height: 120px;
-  border: 1px solid red;
 }
 
 .frame-footer {
   width: 1060px;
   height: 50px;
   margin: 40px auto;
-  outline: 1px solid blue;
   display: grid;
   grid-template-columns: 142px 720px  115px;
   grid-template-rows: 50px;
   align-items: center;
+  gap: 40px
 }
 
 .social-icons {
@@ -345,13 +355,10 @@ text-align: center;
   padding-left: 0;
 }
 
-.social-icons img {
-
-}
 
 .footer-phone {
   height: 50px;
-  padding-top: 15px;
+  padding-top: 5px;
   text-align: center;
   font-weight: 400;
   font-size: 40px;
