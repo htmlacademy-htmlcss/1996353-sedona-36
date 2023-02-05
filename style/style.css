@@ -275,14 +275,21 @@ margin: 50px auto 94px;
   background-image: url(../img/Subscribe-fog.png);
 }
 
-.subscribe-h2 h2 {
-  padding-top: 0;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
+.subscribe-catalog {
+  border-top: 1px solid #76c0d6;
+  height: 415px;
+}
+
+
+
+.subscribe-catalog-h2 {
+  width: 475px;
+  margin: 96px auto 45px;
   text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
+  color:#333333;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .subscribe-h2  {
@@ -295,6 +302,28 @@ margin: 50px auto 94px;
   line-height: 26px;
 
 }
+
+.subscribe-h2 h2 {
+  padding-top: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe-catalog-h2 h2 {
+  padding-top: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+
 
 .subscribe-form {
 text-align: center;
