@@ -396,3 +396,60 @@ text-align: center;
   text-decoration: none;
   color: #000000;
 }
+
+/* --------------------КАТАЛОГ--------------------------------- */
+
+.filter-hotel {
+  width: 1200px;
+  height: 412px;
+  background-image: url("../img/filter-background.png");
+  color: white;
+  font-style: normal;
+  border: 1px solid white;
+
+}
+
+.filter-content {
+  width: 1060px;
+  height: 307px;
+  margin: 35px auto 70px;
+  outline: 3px solid white;
+}
+/*рамка для h1 */
+.filter-heading {
+  padding-top: 10px;
+  width: 1060px;
+  height: 107px;
+  outline: 1px solid pink;
+  margin: 35px auto 40px;
+  font-size: 16px;
+  line-height: 21px;
+
+}
+/* сам заголовок */
+.inner-header-title {
+  margin-top: 0;
+  font-size: 56px;
+  line-height: 60px;
+  margin-bottom: 5px;
+}
+
+.icons-hotels {
+  width: 114px;
+  height: 21px;
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 10px 10px 73px;
+  grid-template-rows: 21px;
+  outline: 1px solid black;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.breadcrumbs {
+  display: inline;
+  margin: 0;
+}
+
+/* инфраструктура */
+
