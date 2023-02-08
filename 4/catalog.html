@@ -29,41 +29,49 @@
     </header>
     <main class="page-main">
       <section class="filter-hotel">
-        <img src="img/catalog-background.png" alt="фоновая картинка гор Седоны">
-        <div class="filter-header">
-          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <div class="filter-content">
+          <div class="filter-heading">
+            <h1 class="inner-header-title">Гостиницы Седоны</h1>
+            <div class="icons-hotels">
+              <img src="img/icon-house.svg" alt="иконка домика" width="12px" height="12px">
+              <img src="img/to-right.svg" alt="знак больше" width="7px" height="10px">
+              <p class="breadcrumbs">Гостиницы</p>
+            </div>
 
-          <img src="img/icon-house.svg" alt="иконка домика" width="12px" height="12px">
-          <img src="img/to-right.svg" alt="знак больше" width="7px" height="10px">
-          <p class="breadcrumbs">Гостиницы</p>
+
+          </div>
 
 
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <h4 class="catalog-filter-title">Инфраструктура:</h4>
               <ul class="catalog-filter-list">
-                <li class="catalog-filter-gut"><label class="control"><input type="checkbox" name="water" id="water" checked> Бассейн</label></li>
-                <li class="catalog-filter-gut"><label class="control"><input type="checkbox" name="parking" id="parking" checked> Парковка</label></li>
-                <li class="catalog-filter-gut"><label class="control"><input type="checkbox" name="wi-fi" id="wi-fi"> Wi-Fi</label></li>
+                <li class="catalog-filter-gut"><label class="control"><input class="filter-choose" type="checkbox" name="water" id="water" checked> Бассейн</label></li>
+                <li class="catalog-filter-gut"><label class="control"><input class="filter-choose" type="checkbox" name="parking" id="parking" checked> Парковка</label></li>
+                <li class="catalog-filter-gut"><label class="control"><input class="filter-choose" type="checkbox" name="wi-fi" id="wi-fi"> Wi-Fi</label></li>
               </ul>
             </fieldset>
 
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип жилья</legend>
+              <h4 class="catalog-filter-title">Тип жилья</h4>
               <ul class="catalog-filter-list">
-                <li><label class="control"><input type="radio" name="home" value="hotel" checked> Гостиница</label></li>
-                <li><label class="control"><input type="radio" name="home" value="motel"> Мотель</label></li>
-                <li><label class="control"> <input type="radio" name="home" value="apartment"> Апартаменты</label></li>
+                <li><label class="control"><input class="filter-choose" type="radio" name="home" value="hotel" checked> Гостиница</label></li>
+                <li><label class="control"><input class="filter-choose" type="radio" name="home" value="motel"> Мотель</label></li>
+                <li><label class="control"><input class="filter-choose" type="radio" name="home" value="apartment"> Апартаменты</label></li>
               </ul>
             </fieldset>
 
-            <h3>Стоимость, Р:</h3>
-            <input type="number" step="100" min="200" max="10000" name="number1"> от
-            <input type="number" step="100" min="200" max="10000" name="number2"> до
-            <input type="range" min="50" max="10000" step="100">
+            <div class="range-price">
+              <h3>Стоимость, Р:</h3>
+            <input class="price-range" type="number" step="100" min="1500" max="10000" name="number1"><span class="rub">от</span>
+            <input class="price-range" type="number" step="100" min="1500" max="10000" name="number2"><span class="rub">до</span>
+            <input class="scale" type="range" min="50" max="10000" step="100">
+            </div>
 
-            <button class="button" type="submit">Применить</button>
+            <div class="buttons-block">
+              <button class="button-filter" type="submit">Применить</button>
             <button class="reset" type="reset">сбросить</button>
+            </div>
           </form>
         </div>
       </section>
@@ -71,14 +79,16 @@
       <section class="filter-catalog">
         <div class="sort-price">
           <h2>Найдено гостиниц: 38</h2>
-        <select name="hotels" id="hotels">
-          <option value="chipest">Сначала дешёвые</option>
-          <option value="pop">Сначала популярные</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a href="#"><img src="img/table.svg" alt="показать плитка"></a>
-        <a href="#"><img src="img/icon-rows.svg" alt=" показать по одному"></a>
-        <a href="#"><img src="img/icon-strings.svg" alt="показать список"></a>
+          <div class="hotels-select">
+            <select name="hotels" id="hotels">
+              <option value="chipest">Сначала дешёвые</option>
+              <option value="pop">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <a href="#"><img src="img/table.svg" alt="показать плитка"></a>
+            <a href="#"><img src="img/icon-rows.svg" alt=" показать по одному"></a>
+            <a href="#"><img src="img/icon-strings.svg" alt="показать список"></a>
+          </div>
         </div>
 
         <div class="catalog-items">
@@ -139,15 +149,15 @@
           </div>
         </div>
       </section>
-      <section class="subscribe">
-        <div class="subscribe-h2">
+      <section class="subscribe-catalog">
+        <div class="subscribe-catalog-h2">
           <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         </div>
         <div class="subscribe-form">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" placeholder="Ваш e-mail" name="email" id="email">
-            <input type="submit" value="подписаться">
+            <input type="email" class="input-email" placeholder="Ваш e-mail" name="email" id="email">
+            <input type="submit" class="input-submit" value="подписаться">
           </form>
         </div>
       </section>
@@ -155,16 +165,15 @@
     <footer class="footer">
       <div class="frame-footer">
         <ul class="social-icons">
-          <li><a href="#"><img src="img/icon-vk.svg" alt="icon vk" width="24px" height="14px"></a></li>
-          <li><a href="#"><img src="img/icon-telegram.svg" alt="icon telegram" width="18px" height="16px"></a></li>
-          <li><a href="#"><img src="img/icon-youtube.svg" alt="icon youtube" width="22px" height="17px"></a></li>
+          <li><a href=""><img src="img/icon-vk.svg" alt=""></a></li>
+          <li><a href=""><img src="img/icon-telegram.svg" alt=""></a></li>
+          <li><a href=""><img src="img/icon-youtube.svg" alt=""></a></li>
         </ul>
-        <a style="text-decoration: none;" href="tel:+78128121212">+7(812)812-12-12</a>
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a href="htmlacademy.ru"><img src="img/html-academy-logo.jpg" alt="logo-htmlacademy"></a>
       </div>
     </footer>
   </div>
-
 
 </body>
 </html>
