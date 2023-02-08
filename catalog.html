@@ -62,13 +62,13 @@
 
             <div class="range-price">
               <h3>Стоимость, Р:</h3>
-            <input type="number" step="100" min="200" max="10000" name="number1"> от
-            <input type="number" step="100" min="200" max="10000" name="number2"> до
-            <input type="range" min="50" max="10000" step="100">
+            <input class="price-range" type="number" step="100" min="1500" max="10000" name="number1"><span class="rub">от</span>
+            <input class="price-range" type="number" step="100" min="1500" max="10000" name="number2"><span class="rub">до</span>
+            <input class="scale" type="range" min="50" max="10000" step="100">
             </div>
 
             <div class="buttons-block">
-              <button class="button" type="submit">Применить</button>
+              <button class="button-filter" type="submit">Применить</button>
             <button class="reset" type="reset">сбросить</button>
             </div>
           </form>
@@ -78,14 +78,16 @@
       <section class="filter-catalog">
         <div class="sort-price">
           <h2>Найдено гостиниц: 38</h2>
-        <select name="hotels" id="hotels">
-          <option value="chipest">Сначала дешёвые</option>
-          <option value="pop">Сначала популярные</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a href="#"><img src="img/table.svg" alt="показать плитка"></a>
-        <a href="#"><img src="img/icon-rows.svg" alt=" показать по одному"></a>
-        <a href="#"><img src="img/icon-strings.svg" alt="показать список"></a>
+          <div class="hotels-select">
+            <select name="hotels" id="hotels">
+              <option value="chipest">Сначала дешёвые</option>
+              <option value="pop">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <a href="#"><img src="img/table.svg" alt="показать плитка"></a>
+            <a href="#"><img src="img/icon-rows.svg" alt=" показать по одному"></a>
+            <a href="#"><img src="img/icon-strings.svg" alt="показать список"></a>
+          </div>
         </div>
 
         <div class="catalog-items">
