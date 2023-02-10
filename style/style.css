@@ -594,16 +594,8 @@ line-height: 24px;
     height: 1235px;
   }
 
-  .sort-price {
-    width: 1060px;
-    height: 50px;
-    display: flex;
-  }
 
-  .sort-prise h2 {
-    width: 338px;
-    height: 36px;
-  }
+
 .hotels-select {
   width: 522px;
   height: 50px;
@@ -611,4 +603,74 @@ line-height: 24px;
   line-height: 21px;
 
 }
-/* ------------- */
+/* -------------section class"filter-catalog"------------------- */
+
+.filter-catalog {
+  width: 1200px;
+  height: 1235px;
+  padding: 50px 70px 60px;
+  outline: 1px solid violet;
+}
+/* сортировка "найдено гостиниц"---------------------- */
+.sort-price {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 1060px;
+  height: 49px;
+  outline: 3px solid rgb(67, 122, 97);
+
+}
+.sort-price h2 {
+  margin-right: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+
+
+}
+.sort-price {
+  width: 1060px;
+  height: 50px;
+  display: flex;
+}
+
+.sort-prise h2 {
+  width: 338px;
+  height: 36px;
+}
+
+.hotels-select {
+  width: 500px;
+  height: 50px;
+
+
+}
+
+.hotels-selecting {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.select-ferst {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+ .show-icons {
+  display: flex;
+  gap: 5px;
+
+ }
+.show-li {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  align-self: center;
+}
