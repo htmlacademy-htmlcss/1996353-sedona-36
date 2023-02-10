@@ -644,28 +644,37 @@ line-height: 24px;
 }
 
 .hotels-select {
-  width: 500px;
+  padding-top: 8px;
+  width: 290px;
   height: 50px;
+  outline: 1px solid black;
+  text-align: center;
 
 
 }
 
 .hotels-selecting {
+  width: 260px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  margin: 8px auto;
+  padding: auto;
 }
 
 .select-ferst {
+
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
  .show-icons {
+  margin-left: 30px;
   display: flex;
   gap: 5px;
+  list-style: none;
 
  }
 .show-li {
