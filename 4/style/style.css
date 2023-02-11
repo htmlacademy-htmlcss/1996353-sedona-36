@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -11,7 +11,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -20,7 +20,7 @@
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("fonts/pt-sans-italic.woff2") format("woff2");
+  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
 
   font-display: swap;
 }
@@ -417,7 +417,7 @@ text-align: center;
 }
 /*рамка для h1 */
 .filter-heading {
-  padding-top: 10px;
+  padding-top: 0;
   width: 1060px;
   height: 107px;
   outline: 1px solid pink;
@@ -429,15 +429,15 @@ text-align: center;
 /* сам заголовок */
 .inner-header-title {
   margin-top: 0;
-  font-size: 56px;
-  line-height: 60px;
-  margin-bottom: 5px;
+  font-size: 60px;
+  line-height: 78px;
+  margin-bottom: 0;
 }
 
 .icons-hotels {
   width: 114px;
   height: 21px;
-  margin-top: 16px;
+  margin-top: 6px;
   display: grid;
   grid-template-columns: 10px 10px 73px;
   grid-template-rows: 21px;
@@ -457,66 +457,93 @@ text-align: center;
   padding: 0;
   width: 1060px;
   height: 160px;
+  display: flex;
   outline: 3px solid rgb(29, 18, 177);
-  display: grid;
-  grid-template-columns: 200px 200px 390px 200px;
-  grid-template-rows: 160px;
-  gap: 20px;
- }
+  display: flex;
 
+ }
+/* --------------------check-box-------------- */
  .filter-choose {
   margin-bottom: 0;
-  margin-top: 10px;
   width: 20px;
   height: 20px;
   margin-left: -20px;
  }
-
+/* ----------бассейн парковка wi-fi----------- */
  .catalog-filter-group {
-  width: 160px;
-  height: 157px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-   outline: 1px solid green;
+    width: 185px;
+    height: 157px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
    padding-top: 0;
    align-content: start;
  }
 
- .catalog-filter-group h4 {
+ .catalog-filter-h4 {
   margin: 0;
+  padding: 0;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
  }
 
- .catalog-filter-list li {
+ .catalog-filter-gut {
   list-style: none;
 
- }
 
+ }
+/* ----------бассейн парковка wi-fi----------- */
  .catalog-filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   width: 112px;
   padding: 0;
-  margin-left: 0;
+  margin-top: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
  }
 
-/* диапазон цен */
+ .control {
+  display: flex;
+  gap: 15px;
+ }
+
+/* диапазон цен------------------price-range--------------------- */
  .range-price {
   height: 160px;
-  width: 400px;
+  width: 310px;
   outline: 1px solid yellow;
   align-self: start;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
  }
 
  .range-price h3 {
-  margin-top: -10px;
-  margin-bottom: 35px;
+  margin-top: 0;
+  margin-bottom: 31px;
+  text-align: left;
 
  }
 
  .price-range {
   width: 90px;
-  height: 40px;
+  height: 43px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   color:#000000;
  }
 
@@ -537,45 +564,122 @@ text-align: center;
  }
 /* ------------buttons-block-------------------- */
  .buttons-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  align-self: end;
   width: 191px;
-  height: 157px;
-  text-align: center;
+  height: 108px;
+  text-align: right;
   color:#ffffff;
  }
-
- .button-filter {
-  margin-top: 40px;
+/* кнопка применить----------------------------------- */
+ .button-filter,
+ .reset
+  {
   padding: 8px 50px;
   background-color: #6db6bb;
-  font-size: 18px;
-  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   border-radius: 5px;
   color: #ffffff;
  }
- .reset {
-  font-size: 20px;
-  color: #ffffff;
- }
+
   /* ---------------filter catalog------------------------- */
   .filter-catalog {
     width: 1200px;
     height: 1235px;
   }
 
-  .sort-price {
-    width: 1060px;
-    height: 50px;
-    display: flex;
-  }
 
-  .sort-prise h2 {
-    width: 338px;
-    height: 36px;
-  }
+
 .hotels-select {
   width: 522px;
   height: 50px;
   font-size: 18px;
   line-height: 21px;
 
+}
+/* -------------section class"filter-catalog"------------------- */
+
+.filter-catalog {
+  width: 1200px;
+  height: 1235px;
+  padding: 50px 70px 60px;
+  outline: 1px solid violet;
+}
+/* сортировка "найдено гостиниц"---------------------- */
+.sort-price {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 1060px;
+  height: 49px;
+  outline: 3px solid rgb(67, 122, 97);
+
+}
+.sort-price h2 {
+  margin-right: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+
+
+}
+.sort-price {
+  width: 1060px;
+  height: 50px;
+  display: flex;
+}
+
+.sort-prise h2 {
+  width: 338px;
+  height: 36px;
+}
+
+.hotels-select {
+  padding-top: 8px;
+  width: 290px;
+  height: 50px;
+  outline: 1px solid black;
+  text-align: center;
+
+
+}
+
+.hotels-selecting {
+  width: 260px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 8px auto;
+  padding: auto;
+}
+
+.select-ferst {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+ .show-icons {
+  margin-left: 30px;
+  display: flex;
+  gap: 5px;
+  list-style: none;
+
+ }
+.show-li {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  align-self: center;
 }

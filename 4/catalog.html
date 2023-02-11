@@ -33,8 +33,8 @@
           <div class="filter-heading">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <div class="icons-hotels">
-              <img src="img/icon-house.svg" alt="иконка домика" width="12px" height="12px">
-              <img src="img/to-right.svg" alt="знак больше" width="7px" height="10px">
+              <img src="img/icon-house.svg" alt="иконка домика" width="12" height="12">
+              <img src="img/to-right.svg" alt="знак больше" width="7" height="10">
               <p class="breadcrumbs">Гостиницы</p>
             </div>
 
@@ -44,7 +44,7 @@
 
           <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="catalog-filter-group">
-              <h4 class="catalog-filter-title">Инфраструктура:</h4>
+              <h4 class="catalog-filter-h4">Инфраструктура:</h4>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-gut"><label class="control"><input class="filter-choose" type="checkbox" name="water" id="water" checked> Бассейн</label></li>
                 <li class="catalog-filter-gut"><label class="control"><input class="filter-choose" type="checkbox" name="parking" id="parking" checked> Парковка</label></li>
@@ -53,7 +53,7 @@
             </fieldset>
 
             <fieldset class="catalog-filter-group">
-              <h4 class="catalog-filter-title">Тип жилья</h4>
+              <h4 class="catalog-filter-h4">Тип жилья</h4>
               <ul class="catalog-filter-list">
                 <li><label class="control"><input class="filter-choose" type="radio" name="home" value="hotel" checked> Гостиница</label></li>
                 <li><label class="control"><input class="filter-choose" type="radio" name="home" value="motel"> Мотель</label></li>
@@ -80,15 +80,17 @@
         <div class="sort-price">
           <h2>Найдено гостиниц: 38</h2>
           <div class="hotels-select">
-            <select name="hotels" id="hotels">
-              <option value="chipest">Сначала дешёвые</option>
-              <option value="pop">Сначала популярные</option>
-              <option value="expensive">Сначала дорогие</option>
+            <select class="hotels-selecting" name="hotels" id="hotels">
+              <option class="select-ferst" value="chipest">Сначала дешёвые</option>
+              <option class="select-ferst" value="pop">Сначала популярные</option>
+              <option class="select-ferst" value="expensive">Сначала дорогие</option>
             </select>
-            <a href="#"><img src="img/table.svg" alt="показать плитка"></a>
-            <a href="#"><img src="img/icon-rows.svg" alt=" показать по одному"></a>
-            <a href="#"><img src="img/icon-strings.svg" alt="показать список"></a>
           </div>
+          <ul class="show-icons">
+            <li class="show-li"><a href="#"><img src="img/table.svg" alt="показать плитка"></a></li>
+            <li class="show-li"><a href="#"><img src="img/icon-rows.svg" alt=" показать по одному"></a></li>
+            <li class="show-li"><a href="#"><img src="img/icon-strings.svg" alt="показать список"></a></li>
+          </ul>
         </div>
 
         <div class="catalog-items">
