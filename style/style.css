@@ -606,6 +606,7 @@ line-height: 24px;
 /* -------------section class"filter-catalog"------------------- */
 
 .filter-catalog {
+  box-sizing: border-box;
   width: 1200px;
   height: 1235px;
   padding: 50px 70px 60px;
@@ -636,6 +637,8 @@ line-height: 24px;
   width: 1060px;
   height: 50px;
   display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .sort-prise h2 {
@@ -678,8 +681,82 @@ line-height: 24px;
 
  }
 .show-li {
+  display: block;
   height: 50px;
   width: 50px;
   text-align: center;
   align-self: center;
+}
+
+.show-li a {
+  display: block;
+  padding: 15px;
+}
+
+/* -----------------------рамка с картинками------------------------ */
+.catalog-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  height: 896px;
+  margin: 0 auto;
+  outline: 2px solid #a31515;
+}
+
+.item {
+display: flex;
+flex-direction: column;
+box-sizing:border-box;
+width: 340px;
+height: 438px;
+outline: 2px solid orange;
+padding: 20px;
+}
+
+.item img {
+  height: 212px;
+  width: 300px;
+}
+
+.item-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  padding-top: 12px;
+}
+
+.price {
+  width: 300px;
+  height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.two-buttons {
+  width: 300px;
+  height: 36px;
+  display: flex;
+  gap: 20px;
+}
+
+
+.button,
+.button-choose {
+  width: 140px;
+  height: 36px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.rating-star {
+  display: flex;
+  width: 300px;
+  height: 27px;
 }
