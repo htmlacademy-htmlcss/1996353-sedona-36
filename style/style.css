@@ -605,6 +605,9 @@ line-height: 24px;
 
 .filter-catalog {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   width: 1200px;
   height: 1235px;
   padding: 50px 70px 60px;
@@ -796,4 +799,6 @@ border-radius: 4px;
 /* ---------разделительная полоса .divider-------- */
 .divider {
   border: 4px solid #E6E6E6;
+  width: 1060px;
+  height: 0;
 }
