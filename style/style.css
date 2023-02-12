@@ -727,14 +727,20 @@ padding: 20px;
 
 .price {
   margin: 0;
+  display: flex;
+  justify-content: space-between;
   width: 300px;
   height: 21px;
+
+}
+.price p {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
+  margin: 0;
 }
+
 .two-buttons {
   display: flex;
   width: 300px;
