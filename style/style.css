@@ -16,7 +16,7 @@
   font-display: swap;
 }
 
-.html {
+html {
    height: 100%;
 }
 
@@ -469,7 +469,7 @@ text-align: center;
  }
 /* ----------бассейн парковка wi-fi----------- */
  .catalog-filter-group {
-    width: 185px;
+    width: 190px;
     height: 157px;
     display: flex;
     flex-direction: column;
@@ -499,7 +499,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 112px;
+  width: 125px;
   padding: 0;
   margin-top: auto;
   font-style: normal;
@@ -523,9 +523,9 @@ text-align: center;
   margin-right: auto;
   margin-left: auto;
   font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
  }
 
  .range-price h3 {
@@ -533,6 +533,15 @@ line-height: 24px;
   margin-bottom: 31px;
   text-align: left;
 
+
+ }
+
+ .rectangle-price {
+   display: flex;
+   align-items: center;
+   width: 300px;
+   margin: 0 auto;
+   border-radius: 4px;
  }
 
  .price-range {
@@ -555,10 +564,11 @@ line-height: 24px;
 
 
  .rub {
-  width: 10px;
+  width: 30px;
+  height: 31px;
   color: #333333;
   background-color: #fff;
-  padding: 11px;
+  padding: 8px;
  }
 /* ------------buttons-block-------------------- */
  .buttons-block {
