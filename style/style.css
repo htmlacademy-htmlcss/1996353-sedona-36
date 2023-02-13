@@ -630,7 +630,6 @@ text-align: center;
   align-items: center;
   width: 1060px;
   height: 49px;
-  outline: 3px solid rgb(67, 122, 97);
 
 }
 .sort-price h2 {
@@ -649,29 +648,32 @@ text-align: center;
   height: 50px;
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
 }
 
-.sort-prise h2 {
-  width: 338px;
+.sort-price h2 {
+  width: 350px;
   height: 36px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  margin-right: auto;
 }
 
 .hotels-select {
   padding-top: 8px;
   width: 290px;
   height: 50px;
-  outline: 1px solid black;
   text-align: center;
-
-
 }
 
-.hotels-selecting {
+
+.hotels-select-name {
   width: 260px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   margin: 8px auto;
   padding: auto;
@@ -684,13 +686,15 @@ text-align: center;
   font-size: 18px;
   line-height: 21px;
 }
+
  .show-icons {
-  margin-left: 30px;
+  margin: 0;
+  margin-left: 33px;
   display: flex;
   gap: 5px;
   list-style: none;
-
  }
+
 .show-li {
   display: block;
   height: 50px;
@@ -708,6 +712,7 @@ text-align: center;
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   width: 1060px;
   height: 896px;
   margin: 0 auto;
