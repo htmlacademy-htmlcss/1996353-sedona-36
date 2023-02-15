@@ -32,9 +32,6 @@ html {
 
 
 body {
-
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -44,10 +41,6 @@ body {
   line-height: 21px;
   color: #333333;
   box-sizing: border-box;
-}
-
-.main-container {
-  flex-grow: 1;
 }
 
 .wrapper {
