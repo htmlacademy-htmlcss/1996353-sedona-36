@@ -18,8 +18,6 @@ html {
   min-height: 100%;
 }
 
-
-
 .nav .link {
   font-size: 20px;
   line-height: 24px;
@@ -44,10 +42,6 @@ body {
   line-height: 21px;
   color: #333333;
   box-sizing: border-box;
-}
-
-.wrapper {
-
 }
 
 .main-container {
@@ -94,7 +88,6 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   list-style: none;
-
 }
 
 
@@ -103,7 +96,6 @@ body {
   text-align: center;
   display: grid;
   align-items: center;
-
 }
 
 .link a {
@@ -125,25 +117,18 @@ body {
   text-transform: uppercase;
 }
 
-/* main */
+/*-------------------------- main-------------------- */
 .hero {
   background-color: #fff;
   background-image: url("../img/Sedona-background.jpg");
   background-repeat: no-repeat;
   /* height: 767px; */
   margin-bottom: 0;
-
 }
 
 .hero img:first-child {
   margin: 51px 371px 22px;
 }
-
-.comfort {
-  /* height: 250px; */
-  padding-bottom: 0;
-}
-
 
 /* класс для широких подзаголовков frame-for-h2 ------------------ */
 
@@ -177,10 +162,13 @@ body {
   color: #333333;
   outline: 1px solid black;
 }
-/* -------------------common-to-sedona--------------------- */
- .common-to-sedona  {
-  display: flex;
-  flex-direction: column;
+/* ------------comfort-------common-to-sedona--------------------- */
+.comfort {
+  /* height: 250px; */
+  padding-bottom: 0;
+}
+
+.common-to-sedona  {
   display: flex;
   flex-direction: column;
   padding: 20px 290.5px 20px;
@@ -190,7 +178,7 @@ body {
 
  .common-to-sedona h2 {
   font-family: "PT Sans", sans-serif;
-  padding-top: 20px;
+  padding-top: 22px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -212,22 +200,6 @@ body {
   margin-bottom: 42px;
  }
 
-
-
-
-
-.frame-for-h2:nth-child(1) {
-  padding-bottom: 8px;
-}
-/* Заинтересовались */
-.interest {
-  /* height: 406px; */
-}
-
-.interest h2 {
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
 
  .frame-for-h2 a {
   text-decoration: none;
@@ -264,7 +236,7 @@ body {
    display: flex;
    padding: 0;
   justify-content: flex-start;
-  gap: 26px;
+  gap: 27px;
 }
 .icons-comfort {
   margin-top: 80px;
@@ -325,17 +297,53 @@ body {
   margin: 3px;
 }
 /* кнопка ПОИСК ГОСТИНИЦЫ В седоне*/
-.frame-for-h2 .button {
+/* Заинтересовались */
+.frame2-for-h2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 56px;
+  padding-top: 75px;
+}
+
+.frame2-for-h2 h2 {
+  margin-bottom: 20px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.frame2-for-h2 p {
+  margin: 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+
+.frame2-for-h2 .button-interest {
+font-family: 'PT Sans', sans-serif;
+font-weight: 700;
 font-style: normal;
 font-size: 20px;
 line-height: 36px;
-display: flex;
-align-items: center;
+padding: 8px 50px;
+color: #FFFFFF;
+background: #756157;
+display: inline-block;
 text-align: center;
 text-transform: uppercase;
-margin: 50px auto 94px;
+margin: 52px auto 40px;
 }
-/*section class="subscribe"  */
+
+/*-------------------*section class="subscribe" ----------------- */
 .subscribe {
   border-top: 1px solid #76c0d6;
   height: 415px;
@@ -343,25 +351,25 @@ margin: 50px auto 94px;
 }
 /* форма на "Подпишитесь на рассылку" ----------------------------*/
 .subscribe-form {
-  width: 684px;
-  min-height: 52px;
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  margin: 0 auto;
-  /* text-align: center; */
+  width: 684px;
+
+  min-height: 52px;
+  margin-left: auto;
+  margin-right: auto;
   }
 
   .input-email {
+    margin: 0;
+    padding-right: 0;
     padding-left: 20px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     width: 430px;
     border-radius: 5px;
-    margin-right: 0;
-
   }
+
   .input-submit {
     margin: 0;
     width: 230px;
