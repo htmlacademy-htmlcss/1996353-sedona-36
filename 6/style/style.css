@@ -3,7 +3,6 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
-
   font-display: swap;
 }
 
@@ -12,15 +11,12 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
-
   font-display: swap;
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
-
-
 
 .nav .link {
   font-size: 20px;
@@ -32,23 +28,20 @@ html {
 
 
 body {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
+  min-height: 100%;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   box-sizing: border-box;
-}
-
-.wrapper {
-  min-height: 100%;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-
 }
 
 .main-container {
@@ -95,7 +88,6 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   list-style: none;
-
 }
 
 
@@ -104,7 +96,6 @@ body {
   text-align: center;
   display: grid;
   align-items: center;
-
 }
 
 .link a {
@@ -117,7 +108,7 @@ body {
 }
 
  .button {
-
+  display: inline-block;
   font-size: 16px;
   padding: 7px 26px;
   background-color: rgb(51, 36, 36);
@@ -126,29 +117,32 @@ body {
   text-transform: uppercase;
 }
 
-/* main */
+/*-------------------------- main-------------------- */
 .hero {
   background-color: #fff;
   background-image: url("../img/Sedona-background.jpg");
   background-repeat: no-repeat;
   /* height: 767px; */
   margin-bottom: 0;
-
 }
 
 .hero img:first-child {
   margin: 51px 371px 22px;
 }
 
-.comfort {
-  /* height: 250px; */
-  padding-bottom: 0;
+/* класс для широких подзаголовков frame-for-h2 ------------------ */
+
+.frame-for-h2 {
+  display: flex;
+  flex-direction: column;
+  margin: 18px auto 0;
+  text-align: center;
+  padding-bottom: 88px;
 }
 
-
-/* класс для широких подзаголовков H2 */
 .frame-for-h2  h2 {
-padding-top: 20px;
+  font-family: "PT Sans", sans-serif;
+  padding-top: 22px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -158,34 +152,54 @@ padding-top: 20px;
 }
 
 .frame-for-h2  p {
-  font-size: 20px;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   font-style: normal;
   text-align: center;
   color: #333333;
+  outline: 1px solid black;
+}
+/* ------------comfort-------common-to-sedona--------------------- */
+.comfort {
+  /* height: 250px; */
+  padding-bottom: 0;
 }
 
-
-
-.frame-for-h2 {
-  /* height: 220px; */
-  padding: 20px 274.5px 20px;
+.common-to-sedona  {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 290.5px 20px;
   text-align: center;
-}
+  color: #333333;
+ }
 
-.frame-for-h2:nth-child(1) {
-  padding-bottom: 8px;
-}
-/* Заинтересовались */
-.interest {
-  /* height: 406px; */
-}
-
-.interest h2 {
-  margin-top: 60px;
+ .common-to-sedona h2 {
+  font-family: "PT Sans", sans-serif;
+  padding-top: 22px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
   margin-bottom: 20px;
-}
+ }
+
+ .common-to-sedona p {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  vertical-align: baseline;
+  margin-bottom: 42px;
+ }
+
 
  .frame-for-h2 a {
   text-decoration: none;
@@ -196,13 +210,18 @@ padding-top: 20px;
 .bridge {
   display: flex;
 }
-
+/* --------------town-block----------------------- */
 .town-block,
 .frame-3in1
  {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 384px;
+}
+
+.town-block .frame-square {
+    justify-content: center;
+    gap: 1.5em;
 }
 
 
@@ -214,7 +233,10 @@ padding-top: 20px;
 }
 /* Жильё еда сувениры  */
 .frame-3in1 .frame-square {
-  justify-content: start;
+   display: flex;
+   padding: 0;
+  justify-content: flex-start;
+  gap: 27px;
 }
 .icons-comfort {
   margin-top: 80px;
@@ -234,14 +256,15 @@ padding-top: 20px;
   background-color: #82B3D3;
 }
 
-
+/* -------------------frame-square ------------------------ */
 .frame-square {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top: 101px;
+  padding-bottom: 100px;
   align-items: center;
   width: 400px;
-  /* height: 384px; */
   background-color: #82B3D3;
   color: #ffffff;
   margin: 0;
@@ -252,39 +275,118 @@ padding-top: 20px;
 .frame-square p {
   width: 230px;
   text-align: center;
+  margin: 0;
   padding-left: 85px;
   padding-right: 85px;
+
 }
 
 .frame-square h3 {
+  width: 165px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  /* padding-top: 100px; */
+  text-transform: uppercase;
 }
 
 .short-string {
+  display: block;
   width: 60px;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
+  margin: 3px;
 }
 /* кнопка ПОИСК ГОСТИНИЦЫ В седоне*/
-.frame-for-h2 .button {
+/* Заинтересовались */
+.frame2-for-h2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 56px;
+  padding-top: 75px;
+}
+
+.frame2-for-h2 h2 {
+  margin-bottom: 20px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.frame2-for-h2 p {
+  margin: 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+
+.frame2-for-h2 .button-interest {
+font-family: 'PT Sans', sans-serif;
+font-weight: 700;
 font-style: normal;
 font-size: 20px;
 line-height: 36px;
-display: flex;
-align-items: center;
+padding: 8px 50px;
+color: #FFFFFF;
+background: #756157;
+display: inline-block;
 text-align: center;
 text-transform: uppercase;
-margin: 50px auto 94px;
+margin: 52px auto 40px;
 }
-/*section class="subscribe"  */
+
+/*-------------------*section class="subscribe" ----------------- */
 .subscribe {
   border-top: 1px solid #76c0d6;
   height: 415px;
   background-image: url(../img/Subscribe-fog.png);
 }
+/* форма на "Подпишитесь на рассылку" ----------------------------*/
+.subscribe-form {
+  display: flex;
+  width: 684px;
+
+  min-height: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .input-email {
+    margin: 0;
+    padding-right: 0;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width: 430px;
+    border-radius: 5px;
+  }
+
+  .input-submit {
+    margin: 0;
+    width: 230px;
+    margin-left: 0;
+    border-radius: 5px;
+    padding: 9px auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #82B3D3;
+    color: #ffffff;
+  }
+  /* ---------------------------------------------------------- */
+
 
 .subscribe-catalog {
   border-top: 1px solid #76c0d6;
@@ -338,37 +440,8 @@ margin: 50px auto 94px;
 
 
 
-.subscribe-form {
-text-align: center;
-}
 
-.input-email {
-  padding-left: 20px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  width: 430px;
-  height: 52px;
-  border-radius: 5px;
-  margin-right: 0;
 
-}
-.input-submit {
-  width: 230px;
-  height: 52px;
-  margin-left: 0;
-  border-radius: 5px;
-  padding: 9px auto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #82B3D3;
-  color: #ffffff;
-
-}
 
 /* footer */
 
