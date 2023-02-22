@@ -15,7 +15,7 @@
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 
@@ -30,9 +30,14 @@ html {
 
 
 body {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
+  min-height: 100%;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -42,10 +47,6 @@ body {
 }
 
 .wrapper {
-  min-height: 100%;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 
 }
 
@@ -144,10 +145,19 @@ body {
 }
 
 
-/* класс для широких подзаголовков H2 */
+/* класс для широких подзаголовков frame-for-h2 ------------------ */
+
+.frame-for-h2 {
+  display: flex;
+  flex-direction: column;
+  margin: 18px auto 0;
+  text-align: center;
+  padding-bottom: 88px;
+}
+
 .frame-for-h2  h2 {
   font-family: "PT Sans", sans-serif;
-  padding-top: 20px;
+  padding-top: 22px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -158,16 +168,16 @@ body {
 
 .frame-for-h2  p {
   margin: 0;
-  display: inline-block;
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   font-style: normal;
   text-align: center;
   color: #333333;
-
   outline: 1px solid black;
 }
+/* -------------------common-to-sedona--------------------- */
  .common-to-sedona  {
   display: flex;
   flex-direction: column;
@@ -204,14 +214,7 @@ body {
 
 
 
-.frame-for-h2 {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 274.5px 20px;
-  text-align: center;
-  padding-bottom: 90px;
 
-}
 
 .frame-for-h2:nth-child(1) {
   padding-bottom: 8px;
@@ -286,7 +289,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 101px;
   padding-bottom: 100px;
   align-items: center;
   width: 400px;
@@ -338,6 +341,44 @@ margin: 50px auto 94px;
   height: 415px;
   background-image: url(../img/Subscribe-fog.png);
 }
+/* форма на "Подпишитесь на рассылку" ----------------------------*/
+.subscribe-form {
+  width: 684px;
+  min-height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 0 auto;
+  /* text-align: center; */
+  }
+
+  .input-email {
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width: 430px;
+    border-radius: 5px;
+    margin-right: 0;
+
+  }
+  .input-submit {
+    margin: 0;
+    width: 230px;
+    margin-left: 0;
+    border-radius: 5px;
+    padding: 9px auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #82B3D3;
+    color: #ffffff;
+  }
+  /* ---------------------------------------------------------- */
+
 
 .subscribe-catalog {
   border-top: 1px solid #76c0d6;
@@ -391,37 +432,8 @@ margin: 50px auto 94px;
 
 
 
-.subscribe-form {
-text-align: center;
-}
 
-.input-email {
-  padding-left: 20px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  width: 430px;
-  height: 52px;
-  border-radius: 5px;
-  margin-right: 0;
 
-}
-.input-submit {
-  width: 230px;
-  height: 52px;
-  margin-left: 0;
-  border-radius: 5px;
-  padding: 9px auto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #82B3D3;
-  color: #ffffff;
-
-}
 
 /* footer */
 
