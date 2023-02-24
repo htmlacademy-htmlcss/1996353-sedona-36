@@ -103,9 +103,9 @@ body {
  font-weight: 700;
 }
 
-.search-menu img {
+ .search-menu img {
   margin: 0
-}
+ }
 
  .button {
   display: inline-block;
@@ -200,7 +200,6 @@ body {
   margin-bottom: 42px;
  }
 
-
  .frame-for-h2 a {
   text-decoration: none;
 }
@@ -278,7 +277,6 @@ body {
   margin: 0;
   padding-left: 85px;
   padding-right: 85px;
-
 }
 
 .frame-square h3 {
@@ -374,7 +372,6 @@ margin: 52px auto 40px;
   margin: 10px auto;
   display: flex;
   align-items: stretch;
-
   }
 
   .input-email {
@@ -409,14 +406,10 @@ margin: 52px auto 40px;
     border-bottom-right-radius: 5px;
   }
   /* ---------------------------------------------------------- */
-
-
 .subscribe-catalog {
   border-top: 1px solid #76c0d6;
   /* height: 415px; */
 }
-
-
 
 .subscribe-catalog-h2 {
   width: 475px;
@@ -436,7 +429,6 @@ margin: 52px auto 40px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-
 }
 
 .subscribe-h2 h2 {
@@ -447,7 +439,6 @@ margin: 52px auto 40px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-
 }
 
 .subscribe-catalog-h2 h2 {
@@ -460,11 +451,6 @@ margin: 52px auto 40px;
   color: #000000;
   margin-bottom: 10px;
 }
-
-
-
-
-
 
 /* footer ---------------------------------*/
 
@@ -493,7 +479,6 @@ margin: 52px auto 40px;
   padding-left: 0;
 }
 
-
 .footer-phone {
   height: 50px;
   padding-top: 5px;
@@ -516,9 +501,6 @@ margin: 52px auto 40px;
   background-image: url("../img/filter-background.png");
   color: white;
   font-style: normal;
-
-  /* border: 1px solid white; */
-
 }
 
 .filter-content {
@@ -534,7 +516,6 @@ margin: 52px auto 40px;
   margin: 0 auto 40px;
   font-size: 16px;
   line-height: 21px;
-
 }
 /* сам заголовок */
 .inner-header-title {
@@ -547,7 +528,6 @@ margin: 52px auto 40px;
 
 .icons-hotels {
   width: 114px;
-  /* height: 21px; */
   margin-top: 6px;
   margin-bottom: 30px;
   display: grid;
@@ -557,6 +537,7 @@ margin: 52px auto 40px;
   gap: 10px;
   color: white;
 }
+
 .breadcrumbs {
   display: inline;
   margin: 0;
@@ -573,7 +554,6 @@ margin: 52px auto 40px;
   width: 1060px;
   height: 160px;
   display: flex;
-
  }
 /* --------------------check-box-------------- */
  .filter-choose {
