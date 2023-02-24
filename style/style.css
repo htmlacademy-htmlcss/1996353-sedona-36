@@ -345,45 +345,68 @@ margin: 52px auto 40px;
 
 /*-------------------*section class="subscribe" ----------------- */
 .subscribe {
-  border-top: 1px solid #76c0d6;
-  height: 415px;
+  border-top: 1px solid transparent;
+  min-height: 415px;
   background-image: url(../img/Subscribe-fog.png);
+}
+
+.subscribe-h2 h2 {
+  margin-bottom: 20px;
+}
+.subscribe-h2  {
+  margin-bottom: 53px;
+}
+
+.subscribe-h2 p {
+  margin: 10px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
 /* форма на "Подпишитесь на рассылку" ----------------------------*/
 .subscribe-form {
-  display: flex;
   width: 684px;
-
   min-height: 52px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
+  display: flex;
+  align-items: stretch;
+
   }
 
   .input-email {
     margin: 0;
-    padding-right: 0;
+    padding: 13px 0;
+    font-family: "PT Sans";
     padding-left: 20px;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    border: 1px solid transparent;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     width: 430px;
-    border-radius: 5px;
   }
 
   .input-submit {
     margin: 0;
     width: 230px;
-    margin-left: 0;
-    border-radius: 5px;
-    padding: 9px auto;
+    padding: 8px 0;
+    font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
-    text-align: center;
+    border: none;
     background-color: #82B3D3;
     color: #ffffff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   /* ---------------------------------------------------------- */
 
@@ -443,7 +466,7 @@ margin: 52px auto 40px;
 
 
 
-/* footer */
+/* footer ---------------------------------*/
 
 .footer {
   width: 1200px;
@@ -1000,8 +1023,6 @@ border-radius: 4px;
 
 .footer {
   padding: 0;
-  position: -webkit-sticky;
-  position: sticky;
   bottom: 0;
   background-color: #fff;
 }
