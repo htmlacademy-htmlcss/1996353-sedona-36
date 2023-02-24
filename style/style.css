@@ -351,6 +351,7 @@ margin: 52px auto 40px;
 .subscribe-h2 h2 {
   margin-bottom: 20px;
 }
+
 .subscribe-h2  {
   margin-bottom: 53px;
 }
@@ -423,7 +424,7 @@ margin: 52px auto 40px;
 
 .subscribe-h2  {
   width: 475px;
-  margin: 96px auto 45px;
+  margin: 96px auto 53px;
   text-align: center;
   color:#ffffff;
   font-weight: 400;
@@ -517,7 +518,7 @@ margin: 52px auto 40px;
   font-size: 16px;
   line-height: 21px;
 }
-/* сам заголовок */
+/* ----------------------------------------------сам заголовок */
 .inner-header-title {
   margin-top: 0;
   padding-top: 35px;
