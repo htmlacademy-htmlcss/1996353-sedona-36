@@ -59,9 +59,9 @@
                   <h3>Стоимость, Р:</h3>
                 <div class="rectangle-price">
                   <input class="price-range" type="number" step="100" min="1500" max="10000" name="number1">
-                  <b class="rub">от</b>
+                  <p class="rub">от</p>
                   <input class="price-range" type="number" step="100" min="1500" max="10000" name="number2">
-                  <span class="rub">до</span>
+                  <p class="rub">до</p>
                 </div>
                 <input class="scale" type="range" min="50" max="10000" step="100">
                 </div>
@@ -174,14 +174,12 @@
         <section class="subscribe-catalog">
           <div class="subscribe-catalog-h2">
             <h2>Подпишитесь на рассылку</h2>
-            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p>Только&nbspполезная&nbspинформация&nbspи&nbspникакого&nbspспама, честное бойскаутское!</p>
           </div>
-          <div class="subscribe-form">
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <input type="email" class="input-email" placeholder="Ваш e-mail" name="email" id="email">
-              <input type="submit" class="input-submit" value="подписаться">
-            </form>
-          </div>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="input-email" type="email" class="input-email" placeholder="Ваш e-mail" name="email" id="email">
+            <input class="input-submit" type="submit" class="input-submit" value="подписаться">
+          </form>
         </section>
       </main>
       <footer class="footer">
