@@ -886,21 +886,28 @@ margin: 52px auto 40px;
 }
 
 .item {
-display: flex;
-flex-direction: column;
 box-sizing: border-box;
-gap: 16px;
-width: 340px;
-height: 438px;
-padding: 18px;
+display: grid;
+grid-template-columns: repeat(2, 140px);
+gap: 16px 20px;
+
+grid-template-areas:
+"image image"
+"name name"
+"p1 p2"
+"button1 button2"
+"rating-icons rating"
+
 }
 
 .item img {
+  grid-area: image;
   height: 212px;
   width: 300px;
 }
 
 .item-name {
+  grid-area: name;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -908,14 +915,6 @@ padding: 18px;
   margin: 0;
 }
 
-.price {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-  height: 21px;
-
-}
 .price p {
   font-style: normal;
   font-weight: 400;
@@ -924,18 +923,18 @@ padding: 18px;
   margin: 0;
 }
 
-.two-buttons {
-  display: flex;
-  width: 300px;
-  height: 36px;
-  gap: 20px;
+.p1 {
+ grid-area: p1;
+}
+
+.p2 {
+ grid-area: p2;
 }
 
 
 .button-item,
 .button-choose {
   width: 140px;
-  /* height: 36px; */
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -949,24 +948,18 @@ padding: 18px;
 }
 
 .button-item {
+  grid-area: button1;
   text-decoration: none;
   line-height: 36px;
+  background-color: #756157;
+  border-radius: 4px;
 }
 
-.button-item {
-  background: #756157;
-border-radius: 4px;
-
+.button-choose {
+  grid-area: button2;
 }
 
-.rating-star {
-  display: flex;
-  gap: 20px;
-  flex-direction: row;
-  width: 300px;
-  height: 40px;
-  outline: 1px solid gray;
-}
+
 
 .rating {
   background: #F2F2F2;
