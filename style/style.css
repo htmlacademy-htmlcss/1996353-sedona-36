@@ -408,6 +408,8 @@ margin: 52px auto 40px;
   }
   /* ---------------------------------------------------------- */
 .subscribe-catalog {
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid #76c0d6;
   /* height: 415px; */
 }
@@ -457,7 +459,6 @@ margin: 52px auto 40px;
 
 .footer {
   width: 1200px;
-  height: 120px;
 }
 
 .frame-footer {
