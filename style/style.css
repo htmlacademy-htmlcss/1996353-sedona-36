@@ -743,7 +743,6 @@ margin: 52px auto 40px;
   /* ---------------filter catalog------------------------- */
   .filter-catalog {
     width: 1200px;
-    height: 1235px;
   }
 
 
@@ -881,14 +880,13 @@ margin: 52px auto 40px;
   flex-wrap: wrap;
   gap: 20px;
   width: 1060px;
-  /* height: 896px; */
   margin: 0 auto;
 }
 
 .item {
 display: flex;
 flex-direction: column;
-box-sizing:border-box;
+box-sizing: border-box;
 gap: 16px;
 width: 340px;
 height: 438px;
@@ -984,6 +982,7 @@ border-radius: 4px;
 }
 /* ---------разделительная полоса .divider-------- */
 .divider {
+  display: block;
   border: 0 solid #E6E6E6;
   width: 1060px;
   height: 0;
