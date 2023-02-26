@@ -889,14 +889,14 @@ margin: 52px auto 40px;
 box-sizing: border-box;
 display: grid;
 grid-template-columns: repeat(2, 140px);
-gap: 16px 20px;
+gap: 4px 20px;
 
 grid-template-areas:
 "image image"
 "name name"
 "p1 p2"
 "button1 button2"
-"rating-icons rating"
+"stars rating"
 
 }
 
@@ -907,7 +907,10 @@ grid-template-areas:
 }
 
 .item-name {
+  display: block;
+  padding: 0;
   grid-area: name;
+  padding: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -915,25 +918,33 @@ grid-template-areas:
   margin: 0;
 }
 
-.price p {
+.p_hotel,
+.p_price {
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin: 0;
+
 }
 
-.p1 {
+.p_hotel {
  grid-area: p1;
+ text-align: left;
 }
 
-.p2 {
+.p_price {
  grid-area: p2;
+ text-align: right;
 }
 
 
 .button-item,
 .button-choose {
+  display: block;
   width: 140px;
   font-style: normal;
   font-weight: 700;
@@ -950,9 +961,9 @@ grid-template-areas:
 .button-item {
   grid-area: button1;
   text-decoration: none;
-  line-height: 36px;
   background-color: #756157;
   border-radius: 4px;
+  /* padding-top: 9px; */
 }
 
 .button-choose {
@@ -962,6 +973,7 @@ grid-template-areas:
 
 
 .rating {
+  grid-area: rating;
   background: #F2F2F2;
   padding: 10px 20px;
   font-size: 16px;
@@ -971,9 +983,12 @@ grid-template-areas:
   text-transform: uppercase;
   border-radius: 4px;
 }
+
 .rating-star img {
+  grid-area: stars;
   width: 140px;
   height: 37px;
+  margin: 0;
 }
 /* ---------разделительная полоса .divider-------- */
 .divider {
