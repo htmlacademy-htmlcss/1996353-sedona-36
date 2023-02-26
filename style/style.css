@@ -338,7 +338,9 @@ background: #756157;
 display: inline-block;
 text-align: center;
 text-transform: uppercase;
+text-decoration: none;
 margin: 52px auto 40px;
+border-radius: 5px;
 }
 
 /*-------------------*section class="subscribe" ----------------- */
