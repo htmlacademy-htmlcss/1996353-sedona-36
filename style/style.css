@@ -882,16 +882,20 @@ border-radius: 5px;
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  column-gap: 60px;
+  row-gap: 45px;
   width: 1060px;
   margin: 0 auto;
+  padding: 21px;
+  padding-top: 19px;
 }
 
 .item {
 box-sizing: border-box;
 display: grid;
 grid-template-columns: repeat(2, 140px);
-gap: 4px 20px;
+grid-template-rows: 212px 28px 20px 36px 38px;
+gap: 16px 20px;
 
 grid-template-areas:
 "image image"
@@ -909,7 +913,7 @@ grid-template-areas:
 }
 
 .item-name {
-  display: block;
+  display: flex;
   padding: 0;
   grid-area: name;
   padding: 0;
@@ -917,12 +921,14 @@ grid-template-areas:
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  align-items: end;
   margin: 0;
+  color: #000000;
 }
 
 .p_hotel,
 .p_price {
-  display: block;
+  display: flex;
   font-family: "PT Sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -930,23 +936,24 @@ grid-template-areas:
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  align-items: center;
 
 }
 
 .p_hotel {
  grid-area: p1;
- text-align: left;
+
 }
 
 .p_price {
  grid-area: p2;
- text-align: right;
+ justify-content: flex-end;
 }
 
 
 .button-item,
 .button-choose {
-  display: block;
+  display: flex;
   width: 140px;
   font-style: normal;
   font-weight: 700;
@@ -957,37 +964,48 @@ grid-template-areas:
   color: #ffffff;
   border-radius: 4px;
   border: transparent;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-item {
+  display: flex;
   grid-area: button1;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   background-color: #756157;
   border-radius: 4px;
-  /* padding-top: 9px; */
 }
 
 .button-choose {
   grid-area: button2;
+  font-size: 14px;
 }
 
 
 
 .rating {
   grid-area: rating;
-  background: #F2F2F2;
-  padding: 10px 20px;
+  display: flex;
+  background-color: #F2F2F2;
+  margin-top: 6px;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
 }
 
-.rating-star img {
+.rating-star {
   grid-area: stars;
+  display: flex;
+  align-items: center;
+}
+
+.rating-star img {
   width: 140px;
   height: 37px;
   margin: 0;
