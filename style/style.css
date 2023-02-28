@@ -580,7 +580,7 @@ border-radius: 5px;
     gap: 30px;
     padding-top: 0;
     align-content: start;
-    margin-right: 68px;
+    margin-right: 58px;
  }
 
  .catalog-filter-group:nth-child(2) {
@@ -818,14 +818,15 @@ border-radius: 5px;
 
 
 .hotels-select-name {
+  display: flex;
+  align-items: center;
   width: 260px;
   font-family: "PT Sans, sans-serif";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 21px;
-  margin: 8px auto;
-  padding: auto;
+  padding: 9px 15px 9px 15px;
   color: #333333;
 }
 
