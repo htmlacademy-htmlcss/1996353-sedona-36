@@ -580,7 +580,7 @@ border-radius: 5px;
     gap: 30px;
     padding-top: 0;
     align-content: start;
-    margin-right: 68px;
+    margin-right: 58px;
  }
 
  .catalog-filter-group:nth-child(2) {
@@ -818,14 +818,16 @@ border-radius: 5px;
 
 
 .hotels-select-name {
+  display: flex;
+  align-items: center;
   width: 260px;
   font-family: "PT Sans, sans-serif";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 21px;
-  margin: 8px auto;
-  padding: auto;
+  padding: 9px 15px 9px 15px;
+  color: #333333;
 }
 
 .select-ferst {
@@ -840,40 +842,40 @@ border-radius: 5px;
   margin: 0;
   margin-left: 35px;
   display: flex;
-  gap: 12px;
+  gap: 10px;
   list-style: none;
  }
 
 .show-li {
   display: flex;
-  align-items: center;
-  padding-top: 22px;
-   padding: 10px;
-  text-align: center;
+   padding: 14px 13px;
+  border: 2px solid black;
 }
 
 .show-li:nth-child(1) a {
   background-image: url("../img/table.svg");
   background-repeat: no-repeat;
-  text-align: center;
-  align-self: center;
-  padding: 12px;
+  width: 16px;
+  height: 14px;
+  margin: auto;
+
+
 }
 
 .show-li:nth-child(2) a {
   background-image: url("../img/icon-rows.svg");
   background-repeat: no-repeat;
-  text-align: center;
-  align-self: center;
-  padding: 12px;
+  width: 16px;
+  height: 14px;
+  margin: auto;
 }
 
 .show-li:nth-child(3) a {
   background-image: url("../img/icon-strings.svg");
   background-repeat: no-repeat;
-  text-align: center;
-  align-self: center;
-  padding: 12px;
+  width: 16px;
+  height: 14px;
+  margin: auto;
 }
 
 
