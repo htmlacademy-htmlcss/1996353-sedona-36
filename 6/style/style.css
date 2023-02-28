@@ -338,7 +338,9 @@ background: #756157;
 display: inline-block;
 text-align: center;
 text-transform: uppercase;
+text-decoration: none;
 margin: 52px auto 40px;
+border-radius: 5px;
 }
 
 /*-------------------*section class="subscribe" ----------------- */
@@ -880,15 +882,19 @@ margin: 52px auto 40px;
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  column-gap: 60px;
+  row-gap: 60px;
   width: 1060px;
   margin: 0 auto;
+  padding: 21px;
+  padding-top: 19px;
 }
 
 .item {
 box-sizing: border-box;
 display: grid;
 grid-template-columns: repeat(2, 140px);
+grid-template-rows: 212px 28px 20px 36px 38px;
 gap: 16px 20px;
 
 grid-template-areas:
@@ -896,7 +902,7 @@ grid-template-areas:
 "name name"
 "p1 p2"
 "button1 button2"
-"rating-icons rating"
+"stars rating"
 
 }
 
@@ -907,33 +913,47 @@ grid-template-areas:
 }
 
 .item-name {
+  display: flex;
+  padding: 0;
   grid-area: name;
+  padding: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  align-items: end;
   margin: 0;
+  color: #000000;
 }
 
-.price p {
+.p_hotel,
+.p_price {
+  display: flex;
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin: 0;
+  align-items: center;
+
 }
 
-.p1 {
+.p_hotel {
  grid-area: p1;
+
 }
 
-.p2 {
+.p_price {
  grid-area: p2;
+ justify-content: flex-end;
 }
 
 
 .button-item,
 .button-choose {
+  display: flex;
   width: 140px;
   font-style: normal;
   font-weight: 700;
@@ -944,36 +964,51 @@ grid-template-areas:
   color: #ffffff;
   border-radius: 4px;
   border: transparent;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-item {
+  display: flex;
   grid-area: button1;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  line-height: 36px;
   background-color: #756157;
   border-radius: 4px;
 }
 
 .button-choose {
   grid-area: button2;
+  font-size: 14px;
 }
 
 
 
 .rating {
-  background: #F2F2F2;
-  padding: 10px 20px;
+  grid-area: rating;
+  display: flex;
+  background-color: #F2F2F2;
+  margin-top: 6px;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
 }
+
+.rating-star {
+  grid-area: stars;
+  display: flex;
+  align-items: center;
+}
+
 .rating-star img {
   width: 140px;
   height: 37px;
+  margin: 0;
 }
 /* ---------разделительная полоса .divider-------- */
 .divider {
