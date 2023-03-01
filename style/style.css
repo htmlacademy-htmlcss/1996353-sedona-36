@@ -458,9 +458,11 @@ border-radius: 5px;
 
 /* footer ---------------------------------*/
 .footer {
+
   display: flex;
+  margin-top: 97px;
   padding: 0;
-  bottom: 0;
+  /* bottom: 0; */
   background-color: #fff;
   width: 1200px;
 }
@@ -477,8 +479,10 @@ border-radius: 5px;
 }
 
 .social-icons {
-  display: flex;
-  flex-direction: row;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: space-around;
   align-items: center;
   list-style: none;
@@ -486,6 +490,7 @@ border-radius: 5px;
 }
 
 .footer-phone {
+  grid-column: 2/3;
   height: 50px;
   padding-top: 5px;
   text-align: center;
@@ -497,6 +502,10 @@ border-radius: 5px;
   color: #000000;
 }
 
+.footer-logo {
+  grid-column: 3/4;
+  grid-row: 1/-1;
+}
 /* --------------------КАТАЛОГ--------------------------------- */
 
 .filter-hotel {
@@ -577,7 +586,7 @@ border-radius: 5px;
     gap: 30px;
     padding-top: 0;
     align-content: start;
-    margin-right: 58px;
+    margin-right: 66px;
     border: 2px solid transparent;
  }
 
