@@ -109,21 +109,29 @@ body {
  font-weight: 700;
 }
 /*-------------------------search-menu----------------------- */
+
+.search-menu-link {
+
+}
+
+
  .search-menu-link img {
-  width: 20px;
-  margin: auto;
+
  }
 
  .search-menu-button {
-  margin-left: 10px;
-  display: inline-block;
+  margin: auto;
+  display: flex;
+  font-family:"PT Sans", sans-serif;
   font-size: 16px;
-  padding: 8px 30px;
-  background-color: rgb(51, 36, 36);
+  line-height: 20px;
+  padding: 8px 32px;
+  background: #756157;
   color: white;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 4px;
   text-transform: uppercase;
+  border: #756157;
 }
 /*-------------------------search-menu----------------------- */
 /*-------------------------- main-------------------- */
