@@ -102,12 +102,37 @@ body {
   text-align: center;
   display: grid;
   align-items: center;
+
 }
+/*---------------- псевдоэлемент на ссылке */
+.current a::after {
+  content: ''; /* Выводим пустое содержимое */
+  position: absolute; /* Абсолютное позиционирование */
+  background: #756257; /* Цвет линии */
+  left: 0; /* Положение линии слева */
+  bottom: -23px; /* Положение линии */
+  width: 100%; /* Линия на ширину текста */
+  height: 5px; /* Высота линии */
+ }
+ /*--------------------- псевдоэлемент на ссылке */
+
+
+
 
 .link a {
- text-decoration: none;
- font-weight: 700;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  position: relative;
 }
+
+
+
+
 /*-------------------------search-menu----------------------- */
 
 .search-menu-link:nth-child(2) {
@@ -186,6 +211,26 @@ position: relative;
   text-align: center;
   color: #333333;
 }
+/* псевдокласс для квадратов --------  advantages */
+.advantages h3 {
+  position: relative;
+}
+
+.advantages  h3::after {
+  content: ''; /* Выводим пустое содержимое */
+  position: absolute; /* Абсолютное позиционирование */
+  background: rgba(255, 255, 255, 0.3); /* Цвет линии */
+  left: 140px; /* Положение линии слева */
+  bottom: -35px; /* Положение линии */
+  width: 60px; /* Линия на ширину текста */
+  height: 3px; /* Высота линии */
+}
+/* псевдокласс для квадратов --------  advantages */
+
+
+
+
+
 /* ------------comfort-------common-to-sedona--------------------- */
 .comfort {
   /* height: 250px; */
