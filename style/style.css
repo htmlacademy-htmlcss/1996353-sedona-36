@@ -1128,6 +1128,7 @@ grid-template-areas:
 /*------------------ модальное окно--------------------- */
 .search-hotel {
   margin: 0 auto;
+  padding: 64px 70px;
   width: 717px;
   height: 576px;
   border-radius: 30px;
@@ -1156,18 +1157,41 @@ grid-template-areas:
 }
 
 .modal-form {
- /* display: flex;
- flex-direction: column;*/
+ display: grid;
+ grid-template-columns: 137px 110px 90px 130px 110px;
+ grid-template-rows: repeat(6, 48px) 60px;
 }
 
-.modal-date {
-  width: 440px;
-  height: 48px;
+.modal-date-on,
+.modal-date-out
+ {
+  grid-column: 2/-1;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  background: #F2F2F2;
+  border-radius: 4px;
+
 }
 
-.modal-label {
-  width: 113px;
-  height: 24px;
+.modal-date-on {
+  grid-row: 1/2;
+}
+
+.modal-date-out {
+  grid-row: 3/4;
+}
+
+.modal-label-on,
+.modal-label-out,
+.modal-label-adult,
+.modal-label-kinder {
+  display: grid;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -1177,6 +1201,57 @@ grid-template-areas:
   text-transform: capitalize;
   color: #000000;
 }
+
+.modal-label-on {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.modal-label-out {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.modal-label-adult {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.modal-label-kinder {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+.adult {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.kinder {
+  grid-column: 5/6;
+  grid-row: 5/6;
+}
+
+.modal-submit {
+  display: flex;
+  justify-content: center;
+  grid-column: 1/-1;
+  grid-row: 7/8;
+  align-items: center;
+  padding: 18px 77px;
+  background: #83B3D3;
+  border-radius: 10px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color:#ffffff;
+  text-transform: uppercase;
+
+}
+
+
+
 
 
 
