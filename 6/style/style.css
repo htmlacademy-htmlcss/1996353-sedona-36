@@ -102,28 +102,69 @@ body {
   text-align: center;
   display: grid;
   align-items: center;
+
 }
+/*---------------- псевдоэлемент на ссылке */
+.current a::after {
+  content: ''; /* Выводим пустое содержимое */
+  position: absolute; /* Абсолютное позиционирование */
+  background: #756257; /* Цвет линии */
+  left: 0; /* Положение линии слева */
+  bottom: -23px; /* Положение линии */
+  width: 100%; /* Линия на ширину текста */
+  height: 5px; /* Высота линии */
+ }
+ /*--------------------- псевдоэлемент на ссылке */
+
+
+
 
 .link a {
- text-decoration: none;
- font-weight: 700;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  position: relative;
 }
+
+
+
+
 /*-------------------------search-menu----------------------- */
+
+.search-menu-link:nth-child(2) {
+position: relative;
+}
+
+
+.like {
+  position: absolute;
+  top: -12px;
+  left: 9px;
+}
+
+
  .search-menu-link img {
-  width: 20px;
-  margin: auto;
+
  }
 
  .search-menu-button {
-  margin-left: 10px;
-  display: inline-block;
+  margin: auto;
+  margin-left: 11px;
+  display: flex;
+  font-family:"PT Sans", sans-serif;
   font-size: 16px;
-  padding: 8px 30px;
-  background-color: rgb(51, 36, 36);
+  line-height: 20px;
+  padding: 8px 32px;
+  background: #756157;
   color: white;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 4px;
   text-transform: uppercase;
+  border: #756157;
 }
 /*-------------------------search-menu----------------------- */
 /*-------------------------- main-------------------- */
@@ -169,8 +210,27 @@ body {
   font-style: normal;
   text-align: center;
   color: #333333;
-  outline: 1px solid black;
 }
+/* псевдокласс для квадратов --------  advantages */
+.advantages h3 {
+  position: relative;
+}
+
+.advantages  h3::after {
+  content: ''; /* Выводим пустое содержимое */
+  position: absolute; /* Абсолютное позиционирование */
+  background: rgba(255, 255, 255, 0.3); /* Цвет линии */
+  left: 140px; /* Положение линии слева */
+  bottom: -35px; /* Положение линии */
+  width: 60px; /* Линия на ширину текста */
+  height: 3px; /* Высота линии */
+}
+/* псевдокласс для квадратов --------  advantages */
+
+
+
+
+
 /* ------------comfort-------common-to-sedona--------------------- */
 .comfort {
   /* height: 250px; */
@@ -1064,5 +1124,221 @@ grid-template-areas:
 .pagination-current {
   background-color: #F2F2F2
 }
+
+/*------------------ модальное окно--------------------- */
+.search-hotel {
+  margin: 0 auto;
+  padding: 64px 70px;
+  width: 573px;
+  height: 446px;
+  border-radius: 30px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 64px 70px;
+  isolation: isolate;
+  outline: 1px solid orange;
+  position: relative;
+}
+
+.button-cross {
+  position: absolute;
+  display: block;
+  right: 45px;
+  top: 60px;
+  padding: 20px;
+  background: url(../img/ellipse-for-modal.png) no-repeat center;
+}
+
+
+
+.modal-h3 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 64px;
+}
+
+.modal-form {
+ display: grid;
+ grid-template-columns: 137px 110px 90px 130px 110px;
+ grid-template-rows: repeat(6, 48px) 60px;
+}
+
+.modal-date-on,
+.modal-date-out
+ {
+  grid-column: 2/-1;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  background: #F2F2F2;
+  border-radius: 4px;
+
+}
+
+.modal-date-on {
+  grid-row: 1/2;
+}
+
+.modal-date-out {
+  grid-row: 3/4;
+}
+
+.modal-label-on,
+.modal-label-out,
+.modal-label-adult,
+.modal-label-kinder {
+  display: grid;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.modal-label-on {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.modal-label-out {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.modal-label-adult {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.modal-label-kinder {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+.adult,
+.kinder {
+  width: 40px;
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  grid-row: 5/6;
+}
+
+.button-adult-minus {
+  width: 1px;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  position: relative;
+  right: 10px;
+}
+
+.button-adult-plus {
+  display: block;
+  width: 1px;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  position: relative;
+  left: 120px;
+}
+
+.button-adult-plus img {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.button-adult-minus img {
+  position: absolute;
+  left: 1px;
+  z-index: 1;
+}
+
+.button-kinder-minus {
+  width: 1px;
+  grid-column:5/6;
+  grid-row: 5/6;
+  position: relative;
+  right: 10px;
+}
+
+.button-kinder-plus {
+  width: 1px;
+  grid-column: 5/6;
+  grid-row: 5/6;
+  position: relative;
+  left: 85px;
+}
+.button-kinder-plus img {
+  position: absolute;
+  top: 15px;
+}
+
+.button-kinder-minus img {
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+
+
+.adult {
+  grid-column: 2/3;
+}
+
+.kinder {
+  grid-column: 5/6;
+}
+
+.modal-submit {
+  display: flex;
+  justify-content: center;
+  grid-column: 1/-1;
+  grid-row: 7/8;
+  align-items: center;
+  padding: 18px 77px;
+  background: #83B3D3;
+  border-radius: 10px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color:#ffffff;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
 
 
