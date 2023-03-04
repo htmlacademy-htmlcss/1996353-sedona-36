@@ -148,9 +148,13 @@
           <label class="modal-label-out" for="exit"> Дата Выезда:</label>
           <input class="modal-date-out"  type="date" name="exit" id="exit"><br>
           <label class="modal-label-adult" for="adult">Взрослые</label>
-          <input class="adult" type="number" name="adult" id="adult" min="1">
+          <div class="button-adult-minus"><img src="img/button-minus.svg" alt="minus."> </div>
+          <input class="adult" type="text" name="adult" id="adult" min="1">
+          <div class="button-adult-plus"> <img src="img/button-plus.svg" alt="plus."> </div>
           <label class="modal-label-kinder" for="kinder">Дети</label>
-          <input class="kinder" type="number" name="kinder" id="kinder" min="0">
+          <div class="button-kinder-minus"><img src="img/button-minus.svg" alt="minus."></div>
+          <input class="kinder" type="text" name="kinder" id="kinder" min="0">
+          <div class="button-kinder-plus"><img src="img/button-plus.svg" alt="plus."> </div>
           <button class="modal-submit" type="submit">Найти</button>
         </form>
       </div>

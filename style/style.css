@@ -1235,6 +1235,9 @@ grid-template-areas:
 
 .adult,
 .kinder {
+  width: 40px;
+  position: relative;
+  margin: 0 auto;
   display: inline-block;
   text-align: center;
   padding: 0;
@@ -1247,6 +1250,63 @@ grid-template-areas:
   line-height: 20px;
   grid-row: 5/6;
 }
+
+.button-adult-minus {
+  width: 1px;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  position: relative;
+  right: 10px;
+}
+
+.button-adult-plus {
+  display: block;
+  width: 1px;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  position: relative;
+  left: 120px;
+}
+
+.button-adult-plus img {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.button-adult-minus img {
+  position: absolute;
+  left: 1px;
+  z-index: 1;
+}
+
+.button-kinder-minus {
+  width: 1px;
+  grid-column:5/6;
+  grid-row: 5/6;
+  position: relative;
+  right: 10px;
+}
+
+.button-kinder-plus {
+  width: 1px;
+  grid-column: 5/6;
+  grid-row: 5/6;
+  position: relative;
+  left: 85px;
+}
+.button-kinder-plus img {
+  position: absolute;
+  top: 15px;
+}
+
+.button-kinder-minus img {
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+
 
 .adult {
   grid-column: 2/3;
