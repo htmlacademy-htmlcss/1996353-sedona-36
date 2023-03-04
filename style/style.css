@@ -1129,8 +1129,8 @@ grid-template-areas:
 .search-hotel {
   margin: 0 auto;
   padding: 64px 70px;
-  width: 617px;
-  height: 576px;
+  width: 573px;
+  height: 446px;
   border-radius: 30px;
   background: #FFFFFF;
   display: flex;
@@ -1139,7 +1139,19 @@ grid-template-areas:
   padding: 64px 70px;
   isolation: isolate;
   outline: 1px solid orange;
+  position: relative;
 }
+
+.button-cross {
+  position: absolute;
+  display: block;
+  right: 45px;
+  top: 60px;
+  padding: 20px;
+  background: url(../img/ellipse-for-modal.png) no-repeat center;
+}
+
+
 
 .modal-h3 {
   display: block;
@@ -1225,7 +1237,7 @@ grid-template-areas:
 .kinder {
   display: inline-block;
   text-align: center;
-
+  padding: 0;
   background: #F2F2F2;
   border-radius: 4px;
   font-family: 'PT Sans';
@@ -1260,8 +1272,9 @@ grid-template-areas:
   line-height: 24px;
   color:#ffffff;
   text-transform: uppercase;
-
 }
+
+
 
 
 
