@@ -1129,7 +1129,7 @@ grid-template-areas:
 .search-hotel {
   margin: 0 auto;
   padding: 64px 70px;
-  width: 717px;
+  width: 617px;
   height: 576px;
   border-radius: 30px;
   background: #FFFFFF;
@@ -1151,7 +1151,6 @@ grid-template-areas:
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  outline: 1px solid green;
   color: #000000;
   margin-bottom: 64px;
 }
@@ -1222,13 +1221,27 @@ grid-template-areas:
   grid-row: 5/6;
 }
 
-.adult {
-  grid-column: 2/3;
+.adult,
+.kinder {
+  display: inline-block;
+  text-align: center;
+
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
   grid-row: 5/6;
 }
+
+.adult {
+  grid-column: 2/3;
+}
+
 .kinder {
   grid-column: 5/6;
-  grid-row: 5/6;
 }
 
 .modal-submit {
