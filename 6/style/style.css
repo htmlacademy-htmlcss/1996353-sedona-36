@@ -1235,78 +1235,52 @@ grid-template-areas:
 
 .adult,
 .kinder {
-  width: 40px;
-  position: relative;
-  margin: 0 auto;
-  display: inline-block;
+  width: 30px;
+  margin: 0;
+  padding: 10px 8px;
   text-align: center;
-  padding: 0;
   background: #F2F2F2;
-  border-radius: 4px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 20px;
-  grid-row: 5/6;
+  border: none;
 }
 
-.button-adult-minus {
-  width: 1px;
+.adult-window {
+  display: flex;
+  justify-content: center;
+  gap: 0;
   grid-column: 2/3;
   grid-row: 5/6;
-  position: relative;
-  right: 10px;
+  background: #F2F2F2;
+  border-radius: 4px;
 }
-
-.button-adult-plus {
-  display: block;
-  width: 1px;
-  grid-column: 2/3;
-  grid-row: 5/6;
-  position: relative;
-  left: 120px;
-}
-
-.button-adult-plus img {
-  position: absolute;
-  right: 10px;
-  top: 15px;
-}
-.button-adult-minus img {
-  position: absolute;
-  left: 1px;
-  z-index: 1;
-}
-
-.button-kinder-minus {
-  width: 1px;
-  grid-column:5/6;
-  grid-row: 5/6;
-  position: relative;
-  right: 10px;
-}
-
-.button-kinder-plus {
-  width: 1px;
+.kinder-window {
+  display: flex;
+  justify-content: center;
+  gap: 0;
   grid-column: 5/6;
   grid-row: 5/6;
-  position: relative;
-  left: 85px;
-}
-.button-kinder-plus img {
-  position: absolute;
-  top: 15px;
+  background: #F2F2F2;
+  border-radius: 4px;
 }
 
-.button-kinder-minus img {
-  position: absolute;
-  z-index: 1;
+.button-minus {
+  width: 20px;
+  border: none;
+  font-size: 30px;
+  margin: 0;
 }
 
-
-
-
+.button-plus {
+  display: block;
+  width: 25px;
+  border: none;
+  font-size: 30px;
+  margin: 0;
+}
 
 .adult {
   grid-column: 2/3;
