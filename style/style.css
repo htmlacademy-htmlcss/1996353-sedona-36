@@ -1126,8 +1126,21 @@ grid-template-areas:
 }
 
 /*------------------ модальное окно--------------------- */
+ .modal-contain {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(237, 226, 226, 0.8);
+  /* visibility: hidden; */
+  background: url(../img/modal-big.png) no-repeat center;
+}
+
 .search-hotel {
-  margin: 0 auto;
+  position: relative;
+  margin: 396px auto;
   padding: 64px 70px;
   width: 573px;
   height: 446px;
@@ -1139,7 +1152,6 @@ grid-template-areas:
   padding: 64px 70px;
   isolation: isolate;
   outline: 1px solid orange;
-  position: relative;
 }
 
 .button-cross {
@@ -1149,6 +1161,7 @@ grid-template-areas:
   top: 60px;
   padding: 20px;
   background: url(../img/ellipse-for-modal.png) no-repeat center;
+  cursor: pointer;
 }
 
 
