@@ -1127,20 +1127,23 @@ grid-template-areas:
 
 /*------------------ модальное окно--------------------- */
  .modal-contain {
-  position: fixed;
+  /* position: fixed;
   left: 0;
-  top: 0;
+  top: 0;  */
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(237, 226, 226, 0.8);
+  /* background-color: rgba(237, 226, 226, 0.8); */
   /* visibility: hidden; */
-  background: url(../img/modal-big.png) no-repeat center;
+  background: url(../img/mod-pefpics.png) no-repeat center;
 }
 
 .search-hotel {
   position: relative;
-  margin: 396px auto;
+  margin: auto;
+  top: 396px;
   padding: 64px 70px;
   width: 573px;
   height: 446px;
