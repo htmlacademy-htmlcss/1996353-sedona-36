@@ -655,13 +655,13 @@ border-radius: 5px;
     gap: 30px;
     padding-top: 0;
     align-content: start;
-    margin-right: 66px;
+    margin-right: 56px;
     border: 2px solid transparent;
  }
 
  .catalog-filter-group:nth-child(2) {
   margin: 0;
-  margin-right: 70px;
+  margin-right: 72px;
  }
 
 
@@ -718,7 +718,7 @@ border-radius: 5px;
 
  .range-price h3 {
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   text-align: left;
   font-style: normal;
   font-weight: 700;
@@ -739,13 +739,14 @@ border-radius: 5px;
 
  .price-range {
   display: block;
-  width: 65px;
-  height: 43px;
-  padding-left: 25px;
+  width: 70px;
+  height: 44px;
+  padding-left: 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  border: none;
   color:#000000;
 
  }
@@ -753,12 +754,12 @@ border-radius: 5px;
  .rub {
   display: block;
   width: 25px;
-  height: 31px;
+  /* height: 31px; */
   margin: 0;
   margin-right: 3px;
   color: #333333;
   background-color: #fff;
-  padding: 7px 12px;
+  padding: 8px 12px;
   text-align: baseline;
   font-style: normal;
   font-weight: 400;
