@@ -57,13 +57,21 @@
 
               <div class="range-price">
                 <h3>Стоимость, Р:</h3>
-              <div class="rectangle-price">
-                <input class="price-range" type="number" step="100" min="1500" max="10000" name="number1">
-                <p class="rub">от</p>
-                <input class="price-range" type="number" step="100" min="1500" max="10000" name="number2">
-                <p class="rub">до</p>
-              </div>
-              <input class="scale" type="range" min="50" max="10000" step="100">
+                <div class="rectangle-price">
+                  <input class="price-range" type="number" step="100" min="0" max="10000" value="0" name="number1">
+                  <p class="rub">от</p>
+                  <input class="price-range" type="number" step="100" min="1500" max="10000"  value="9000" name="number2">
+                  <p class="rub">до</p>
+                </div>
+                <div class="scale">
+                  <div class="scale-range">
+                    <div class="scale-bar" style="right: 61px; width: 100px;">
+                      <button type="button" class="button-toggle button-min"></button>
+                      <button type="button" class="button-toggle button-max"></button>
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
               <div class="buttons-block">

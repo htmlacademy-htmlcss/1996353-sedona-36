@@ -655,13 +655,13 @@ border-radius: 5px;
     gap: 30px;
     padding-top: 0;
     align-content: start;
-    margin-right: 66px;
+    margin-right: 56px;
     border: 2px solid transparent;
  }
 
  .catalog-filter-group:nth-child(2) {
   margin: 0;
-  margin-right: 70px;
+  margin-right: 72px;
  }
 
 
@@ -718,7 +718,7 @@ border-radius: 5px;
 
  .range-price h3 {
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   text-align: left;
   font-style: normal;
   font-weight: 700;
@@ -739,13 +739,14 @@ border-radius: 5px;
 
  .price-range {
   display: block;
-  width: 65px;
-  height: 43px;
-  padding-left: 25px;
+  width: 70px;
+  height: 44px;
+  padding-left: 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  border: none;
   color:#000000;
 
  }
@@ -753,12 +754,12 @@ border-radius: 5px;
  .rub {
   display: block;
   width: 25px;
-  height: 31px;
+  /* height: 31px; */
   margin: 0;
   margin-right: 3px;
   color: #333333;
   background-color: #fff;
-  padding: 7px 12px;
+  padding: 8px 12px;
   text-align: baseline;
   font-style: normal;
   font-weight: 400;
@@ -768,10 +769,41 @@ border-radius: 5px;
  }
 
  .scale {
-  margin-top: 40px;
+  position: relative;
+  margin-top: 44px;
    width: 287px;
-   height: 10px;
-   background-color: #fff;
+   height: 4px;
+   background-color: #3e0202
+ }
+
+ .scale-range {
+  position: absolute;
+  width: 226px;
+  height: 4px;
+  background-color: #ffffff;
+ }
+
+ .button-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  top: -8px;
+  border: 2px solid white;
+  border-radius: 4px;
+
+ }
+
+ .button-toggle:hover {
+  background-color: #15ac3b;
+ }
+
+ .button-min {
+  left: 2px;
+ }
+
+ .button-max {
+  right: -2px;
  }
 
 
@@ -873,30 +905,32 @@ border-radius: 5px;
 }
 
 .sort-price h2 {
+  display: block;
   width: 350px;
-  height: 36px;
+  height: 40px;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  margin-right: auto;
+  margin-right: 187px;
 }
 
 .hotels-select {
   padding-top: 8px;
-  width: 290px;
+  width: 340px;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+  margin-right: 6px;
 }
 
 
 .hotels-select-name {
   display: flex;
   align-items: center;
-  width: 260px;
+  width: 277px;
   font-family: "PT Sans, sans-serif";
   font-style: normal;
   font-weight: 400;
@@ -916,7 +950,7 @@ border-radius: 5px;
 
  .show-icons {
   margin: 0;
-  margin-left: 35px;
+  padding-left: 18px;
   display: flex;
   gap: 10px;
   list-style: none;
@@ -1126,8 +1160,24 @@ grid-template-areas:
 }
 
 /*------------------ модальное окно--------------------- */
+ .modal-contain {
+  /* position: fixed;
+  left: 0;
+  top: 0;  */
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(237, 226, 226, 0.8); */
+  /* visibility: hidden; */
+  background: url(../img/mod-pefpics.png) no-repeat center;
+}
+
 .search-hotel {
-  margin: 0 auto;
+  position: relative;
+  margin: auto;
+  top: 396px;
   padding: 64px 70px;
   width: 573px;
   height: 446px;
@@ -1139,7 +1189,6 @@ grid-template-areas:
   padding: 64px 70px;
   isolation: isolate;
   outline: 1px solid orange;
-  position: relative;
 }
 
 .button-cross {
@@ -1149,6 +1198,7 @@ grid-template-areas:
   top: 60px;
   padding: 20px;
   background: url(../img/ellipse-for-modal.png) no-repeat center;
+  cursor: pointer;
 }
 
 
