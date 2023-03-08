@@ -769,10 +769,41 @@ border-radius: 5px;
  }
 
  .scale {
-  margin-top: 40px;
+  position: relative;
+  margin-top: 44px;
    width: 287px;
-   height: 10px;
-   background-color: #fff;
+   height: 4px;
+   background-color: #3e0202
+ }
+
+ .scale-range {
+  position: absolute;
+  width: 226px;
+  height: 4px;
+  background-color: #ffffff;
+ }
+
+ .button-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  top: -8px;
+  border: 2px solid white;
+  border-radius: 4px;
+
+ }
+
+ .button-toggle:hover {
+  background-color: #15ac3b;
+ }
+
+ .button-min {
+  left: 2px;
+ }
+
+ .button-max {
+  right: -2px;
  }
 
 
