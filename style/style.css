@@ -912,23 +912,24 @@ border-radius: 5px;
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  margin-right: auto;
+  margin-right: 210px;
 }
 
 .hotels-select {
   padding-top: 8px;
-  width: 290px;
+  width: 380px;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+  margin-right: 6px;
 }
 
 
 .hotels-select-name {
   display: flex;
   align-items: center;
-  width: 260px;
+  width: 277px;
   font-family: "PT Sans, sans-serif";
   font-style: normal;
   font-weight: 400;
@@ -948,7 +949,7 @@ border-radius: 5px;
 
  .show-icons {
   margin: 0;
-  margin-left: 35px;
+  padding-left: 0;
   display: flex;
   gap: 10px;
   list-style: none;
