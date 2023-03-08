@@ -905,19 +905,20 @@ border-radius: 5px;
 }
 
 .sort-price h2 {
+  display: block;
   width: 350px;
-  height: 36px;
+  height: 40px;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   margin: 0;
-  margin-right: 210px;
+  margin-right: 187px;
 }
 
 .hotels-select {
   padding-top: 8px;
-  width: 380px;
+  width: 340px;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -949,7 +950,7 @@ border-radius: 5px;
 
  .show-icons {
   margin: 0;
-  padding-left: 0;
+  padding-left: 18px;
   display: flex;
   gap: 10px;
   list-style: none;
