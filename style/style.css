@@ -212,11 +212,13 @@ position: relative;
   color: #333333;
 }
 /* псевдокласс для квадратов --------  advantages */
-.advantages h3 {
+.advantages h3,
+.town-block h3 {
   position: relative;
 }
 
-.advantages  h3::after {
+.advantages  h3::after,
+.town-block h3::after {
   content: ''; /* Выводим пустое содержимое */
   position: absolute; /* Абсолютное позиционирование */
   background: rgba(255, 255, 255, 0.3); /* Цвет линии */
@@ -288,8 +290,13 @@ position: relative;
 }
 
 .town-block .frame-square {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 1.5em;
+    align-content: center;
+    gap: 60px;
+    padding-top: 40px;
+    padding-bottom: 35px
 }
 
 
@@ -356,13 +363,6 @@ position: relative;
   text-transform: uppercase;
 }
 
-.short-string {
-  display: block;
-  width: 60px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
-  margin: 3px;
-}
 /* кнопка ПОИСК ГОСТИНИЦЫ В седоне*/
 /* Заинтересовались */
 .frame2-for-h2 {
