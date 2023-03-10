@@ -1161,9 +1161,9 @@ grid-template-areas:
 
 /*------------------ модальное окно--------------------- */
  .modal-contain {
-  /* position: fixed;
-  left: 0;
-  top: 0;  */
+  position: relative;
+  /* left: 0;
+  top: 0;  */ */
   margin-left: auto;
   margin-right: auto;
   display: flex;
