@@ -482,6 +482,7 @@ border-radius: 5px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #76c0d6;
+  margin-bottom: 97px;
 }
 
 .subscribe-catalog-h2 {
@@ -549,7 +550,6 @@ border-radius: 5px;
 
 .social-icons {
   grid-column: 1/2;
-  grid-row: 1/-1;
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-around;
@@ -573,7 +573,6 @@ border-radius: 5px;
 
 .footer-logo {
   grid-column: 3/4;
-  grid-row: 1/-1;
 }
 /* --------------------КАТАЛОГ--------------------------------- */
 
