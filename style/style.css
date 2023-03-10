@@ -109,10 +109,10 @@ body {
   content: ''; /* Выводим пустое содержимое */
   position: absolute; /* Абсолютное позиционирование */
   background: #756257; /* Цвет линии */
-  left: 0; /* Положение линии слева */
+  left: 15%; /* Положение линии слева */
   bottom: -23px; /* Положение линии */
-  width: 100%; /* Линия на ширину текста */
-  height: 5px; /* Высота линии */
+  width: 76%; /* Линия на ширину текста */
+  height: 4px; /* Высота линии */
  }
  /*--------------------- псевдоэлемент на ссылке */
 
@@ -962,6 +962,11 @@ border-radius: 5px;
   border-radius: 4px;
 }
 
+.show-li:nth-child(2),
+.show-li:nth-child(3) {
+   border: 2px solid #aaaaaa;
+}
+
 .show-li:nth-child(1) a {
   background-image: url("../img/table.svg");
   background-repeat: no-repeat;
@@ -978,7 +983,7 @@ border-radius: 5px;
   width: 14px;
   height: 14px;
   margin: auto;
-  border: 2px solid white;
+  border: 2px solid #333333;
 }
 
 .show-li:nth-child(3) a {
@@ -987,7 +992,7 @@ border-radius: 5px;
   width: 14px;
   height: 14px;
   margin: auto;
-  border: 2px solid white;
+  border: 2px solid #333333;
 }
 
 
