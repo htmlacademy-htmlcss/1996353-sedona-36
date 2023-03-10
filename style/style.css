@@ -951,14 +951,15 @@ border-radius: 5px;
   margin: 0;
   padding-left: 18px;
   display: flex;
-  gap: 10px;
+  gap: 8px;
   list-style: none;
  }
 
 .show-li {
   display: flex;
-   padding: 14px 13px;
+   padding: 14px 14px;
   border: 2px solid black;
+  border-radius: 4px;
 }
 
 .show-li:nth-child(1) a {
@@ -974,17 +975,19 @@ border-radius: 5px;
 .show-li:nth-child(2) a {
   background-image: url("../img/icon-rows.svg");
   background-repeat: no-repeat;
-  width: 16px;
+  width: 14px;
   height: 14px;
   margin: auto;
+  border: 2px solid white;
 }
 
 .show-li:nth-child(3) a {
   background-image: url("../img/icon-strings.svg");
   background-repeat: no-repeat;
-  width: 16px;
+  width: 14px;
   height: 14px;
   margin: auto;
+  border: 2px solid white;
 }
 
 
