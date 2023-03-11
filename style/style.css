@@ -1268,9 +1268,15 @@ grid-template-areas:
 }
 
 .modal-label-kinder {
-  display: inline-block;
+ position: relative;
+}
 
-
+.icon-info {
+  position: absolute;
+ color: #83B3D3;
+ align-self: stretch;
+ left: 55px;
+ top: 10px;
 }
 
 .modal-date-on {
