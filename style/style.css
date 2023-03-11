@@ -1247,6 +1247,32 @@ grid-template-areas:
 
 }
 
+.message-error {
+  color: red;
+  grid-column: 2/6;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 20px;
+  border: none;
+}
+
+.message-yes {
+  color: #333333;
+  grid-column: 2/6;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 20px;
+  border: none;
+}
+
+.modal-label-kinder {
+  display: inline-block;
+
+
+}
+
 .modal-date-on {
   grid-row: 1/2;
 }
