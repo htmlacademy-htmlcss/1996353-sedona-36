@@ -27,7 +27,19 @@
         <input class="adult" name="adult" id="adult" type="text" value="2">
         <input type="button" class="button-plus" value="+" onClick="change('adult',0,30, 1);">
       </div>
-      <label class="modal-label-kinder" for="kinder">Дети <img class="icon-info" src="img/icon-info.svg" alt="буква i."></label>
+      <span class="modal-label-kinder">
+        <label class="modal-label-kinder" for="kinder">Дети</label>
+        <span class="tooltip">
+          <button class="button-icon-info" type="button"><svg class="icon-info" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+            </svg>
+          </button>
+          <span class="tooltip-kinder-text">
+            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+          </span>
+        </span>
+      </span>
       <div class="kinder-window">
       <input class="button-minus" type="button" value="-" onClick="change('kinder',0,30,-1);">
       <input class="kinder" type="text" name="kinder" id="kinder" value="2">
