@@ -1168,26 +1168,26 @@ grid-template-areas:
 
 /*------------------ модальное окно--------------------- */
  .modal-contain {
-  position: relative;
-  /* left: 0;
-  top: 0;  */ */
+  position: fixed;
+  left: 0;
+  top: 0;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(237, 226, 226, 0.8); */
-  /* visibility: hidden; */
-  background: url(../img/mod-pefpics.png) no-repeat center;
+  background: #F2F2F2;
+  opacity: 0.8;
+  display: none;
 }
 
 .search-hotel {
   position: relative;
   margin: auto;
-  top: 396px;
+  top: -43px;
   padding: 64px 70px;
-  width: 573px;
-  height: 446px;
+  /* width: 573px;
+  height: 446px; */
   border-radius: 30px;
   background: #FFFFFF;
   display: flex;
@@ -1196,6 +1196,10 @@ grid-template-areas:
   padding: 64px 70px;
   isolation: isolate;
   outline: 1px solid orange;
+}
+
+.search-hotel-auth {
+  width: 573px;
 }
 
 .button-cross {
