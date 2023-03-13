@@ -17,15 +17,15 @@
 
         <label class="modal-label-on" for="date">Дата Заезда:</label>
         <input class="modal-date-on" type="date" name="entry" id="entry">
-        <textarea class="message-error" name="message-error" id="message-error" cols="30" rows="1" readonly>Мы не можем отправить вас в прошлое.</textarea>
+        <p class="message-error">Мы не можем отправить вас в прошлое.</p>
         <label class="modal-label-out" for="exit">Дата Выезда:</label>
         <input class="modal-date-out"  type="date" name="exit" id="exit">
-        <textarea class="message-yes" name="message-yes" id="message-yes" cols="30" rows="1" readonly>На эти даты есть свободные номера. Пока есть.</textarea><br>
+        <p class="message-yes">На эти даты есть свободные номера. Пока есть.</p>
         <label class="modal-label-adult" for="adult">Взрослые</label>
         <div class="adult-window">
-        <input type="button" class="button-minus" value="-" onClick="change('adult',0,30,-1);">
-        <input class="adult" name="adult" id="adult" type="text" value="2">
-        <input type="button" class="button-plus" value="+" onClick="change('adult',0,30, 1);">
+          <input type="button" class="button-minus" value="-" onClick="change('adult',0,30,-1);">
+          <input class="adult" name="adult" id="adult" type="text" value="2">
+          <input type="button" class="button-plus" value="+" onClick="change('adult',0,30, 1);">
         </div>
         <label class="modal-label-kinder" for="kinder">Дети <img class="icon-info" src="img/icon-info.svg" alt="буква i."></label>
         <div class="kinder-window">
