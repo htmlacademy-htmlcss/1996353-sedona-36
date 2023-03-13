@@ -1252,8 +1252,10 @@ grid-template-areas:
   grid-column: 2/6;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   padding-left: 20px;
+  margin-top: 4px;
+  word-spacing: 0.01em;
   border: none;
 }
 
@@ -1262,8 +1264,9 @@ grid-template-areas:
   grid-column: 2/6;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   padding-left: 20px;
+  margin-top: 4px;
   border: none;
 }
 
