@@ -1211,12 +1211,27 @@ grid-template-areas:
 .button-cross {
   position: absolute;
   display: block;
-  right: 45px;
-  top: 60px;
+  width: 15px;
+  height: 15px;
+  right: 47px;
+  top: 62px;
   padding: 20px;
-  background: url(../img/ellipse-for-modal.png) no-repeat center;
+  background: #F2F2F2 no-repeat center;
+  border-radius: 50%;
   cursor: pointer;
 }
+
+.button-cross:hover {
+  background: url(../img/ellipse-for-modal.png)  #E6E6E6 no-repeat center;
+  border-radius: 50%;
+}
+.button-cross:focus {
+  background: url(../img/ellipse-for-modal.png)  #E6E6E6 no-repeat center;
+  /* border-radius: 50%; */
+  border: 2px solid #82B3D3;
+}
+
+
 
 
 
@@ -1306,7 +1321,6 @@ grid-template-areas:
 
 .tooltip-kinder-text {
   background-color: black;
-  color: white;
   position: absolute;
   width: 216px;
   height: 110px;
@@ -1421,8 +1435,26 @@ display: block;
   border: none;
   font-size: 30px;
   margin: 0;
-  color: #999999;
+  color: #D6D2CF;
 }
+
+.button-minus:hover,
+.button-plus:hover {
+  color:#000000;
+}
+.button-minus:active,
+.button-plus:active {
+  color:#BBB9B8;
+}
+
+.button-minus:focus,
+.button-plus:focus {
+  color:#000000;
+  border: 2px solid #82B3D3;
+}
+
+
+
 
 .button-plus {
   display: block;
@@ -1430,7 +1462,7 @@ display: block;
   border: none;
   font-size: 30px;
   margin: 0;
-  color: #999999;
+  color: #D6D2CF;
 }
 
 .adult {
