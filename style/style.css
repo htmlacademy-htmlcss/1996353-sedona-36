@@ -1180,8 +1180,10 @@ grid-template-areas:
   display: flex;
   width: 100%;
   height: 100%;
-  background: #F2F2F2;
-  opacity: 0.8;
+  background-color:rgba(251, 247, 247, 0.8)
+}
+
+.modal-contain-close {
   display: none;
 }
 
@@ -1193,13 +1195,13 @@ grid-template-areas:
   /* width: 573px;
   height: 446px; */
   border-radius: 30px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 64px 70px;
-  isolation: isolate;
-  outline: 1px solid orange;
+  /* isolation: isolate; */
+  z-index: 2;
 }
 
 .search-hotel-auth {
