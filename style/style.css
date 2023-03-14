@@ -1222,13 +1222,18 @@ grid-template-areas:
 }
 
 .button-cross:hover {
-  background: url(../img/ellipse-for-modal.png)  #E6E6E6 no-repeat center;
+  background: #E6E6E6 no-repeat center;
   border-radius: 50%;
 }
 .button-cross:focus {
-  background: url(../img/ellipse-for-modal.png)  #E6E6E6 no-repeat center;
-  /* border-radius: 50%; */
+  background: #E6E6E6 no-repeat center;
+  border-radius: 50%;
   border: 2px solid #82B3D3;
+}
+.button-cross:active {
+  background: #E6E6E6 no-repeat center;
+  border-radius: 50%;
+  color: #A1A1A1;
 }
 
 
