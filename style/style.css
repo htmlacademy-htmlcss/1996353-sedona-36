@@ -9,7 +9,7 @@
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
@@ -170,7 +170,7 @@ position: relative;
 /*-------------------------- main-------------------- */
 .hero {
   background-color: #fff;
-  background-image: url("../img/Sedona-background.jpg");
+  background-image: url("../img/hero-background.jpg");
   background-repeat: no-repeat;
   /* height: 767px; */
   margin-bottom: 0;
@@ -299,6 +299,29 @@ position: relative;
     padding-bottom: 35px
 }
 
+/*---------------- .3in1 .frame-square--------------------- */
+.frame-3in1 .frame-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  padding-bottom: 79px;
+  background-color:  rgba(131, 179, 211, 0.12);
+}
+
+.frame-3in1 .frame-square:first-child {
+  background: rgba(104, 162, 202, 0.3) url("../img/house-icon.svg") no-repeat 50% 26%;
+}
+
+.frame-3in1 .frame-square:nth-child(2) {
+  background: rgba(131, 179, 211, 0.12) url("../img/burger-icon.svg") no-repeat 50% 26%;
+}
+
+.frame-3in1 .frame-square:last-child {
+  background: rgba(104, 162, 202, 0.3) url("../img/suvenir.svg") no-repeat 50% 26%;
+}
+
+
 
 /* фон для квадратов .frame-square*/
 .town-block .frame-square,
@@ -310,8 +333,9 @@ position: relative;
 .frame-3in1 .frame-square {
    display: flex;
    padding: 0;
-  justify-content: flex-start;
-  gap: 27px;
+   padding-bottom: 80px;
+   justify-content: flex-end;
+   gap: 27px;
 }
 .icons-comfort {
   margin-top: 80px;
@@ -328,7 +352,7 @@ position: relative;
 
 .true-town .frame-square,
 .bridge .frame-square {
-  background-color: #82B3D3;
+  background: #82B3D3;
 }
 
 /* -------------------frame-square ------------------------ */
@@ -340,7 +364,7 @@ position: relative;
   padding-bottom: 100px;
   align-items: center;
   width: 400px;
-  background-color: #82B3D3;
+  /* background: url("img/house-icon.svg") #82B3D3; */
   color: #ffffff;
   margin: 0;
   font-size: 18px;
@@ -412,11 +436,14 @@ margin: 52px auto 40px;
 border-radius: 5px;
 }
 
+
+
+
 /*-------------------*section class="subscribe" ----------------- */
 .subscribe {
   border-top: 1px solid transparent;
   min-height: 415px;
-  background-image: url(../img/Subscribe-fog.png);
+  background: url(../img/subs-fog.png) no-repeat;
 }
 
 .subscribe-h2 h2 {
@@ -1011,22 +1038,24 @@ border-radius: 5px;
 
 .item {
 box-sizing: border-box;
-display: grid;
-grid-template-columns: repeat(2, 140px);
-grid-template-rows: 212px 28px 20px 36px 38px;
-gap: 16px 20px;
-
-grid-template-areas:
-"image image"
-"name name"
-"p1 p2"
-"button1 button2"
-"stars rating"
-
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.castom-buttons,
+.pracing-hotel,
+.rating-star {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
+
+
 .item img {
-  grid-area: image;
   height: 212px;
   width: 300px;
 }
@@ -1034,8 +1063,7 @@ grid-template-areas:
 .item-name {
   display: flex;
   padding: 0;
-  grid-area: name;
-  padding: 0;
+  padding-top: 7px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1050,7 +1078,7 @@ grid-template-areas:
   display: flex;
   font-family: "PT Sans", sans-serif;
   margin: 0;
-  padding: 0;
+  padding-top: 5px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1060,15 +1088,16 @@ grid-template-areas:
 }
 
 .p_hotel {
- grid-area: p1;
 
 }
 
 .p_price {
- grid-area: p2;
  justify-content: flex-end;
 }
 
+.castom-buttons {
+  padding-top: 6px;
+}
 
 .button-item,
 .button-choose {
@@ -1089,7 +1118,6 @@ grid-template-areas:
 
 .button-item {
   display: flex;
-  grid-area: button1;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -1098,7 +1126,8 @@ grid-template-areas:
 }
 
 .button-choose {
-  grid-area: button2;
+  display: flex;
+  padding: 8px 8px;
   font-size: 14px;
 }
 
@@ -1109,10 +1138,9 @@ grid-template-areas:
 
 
 .rating {
-  grid-area: rating;
   display: flex;
   background-color: #F2F2F2;
-  margin-top: 6px;
+  margin-top: 0;
   align-items: center;
   justify-content: center;
   font-size: 16px;
@@ -1120,12 +1148,14 @@ grid-template-areas:
   line-height: 20px;
   text-transform: uppercase;
   border-radius: 4px;
+  padding-right: 22px;
 }
 
 .rating-star {
-  grid-area: stars;
   display: flex;
   align-items: center;
+  padding-top: 7px;
+
 }
 
 .rating-star img {
@@ -1180,8 +1210,10 @@ grid-template-areas:
   display: flex;
   width: 100%;
   height: 100%;
-  background: #F2F2F2;
-  opacity: 0.8;
+  background-color:rgba(251, 247, 247, 0.8)
+}
+
+.modal-contain-close {
   display: none;
 }
 
@@ -1193,13 +1225,13 @@ grid-template-areas:
   /* width: 573px;
   height: 446px; */
   border-radius: 30px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 64px 70px;
-  isolation: isolate;
-  outline: 1px solid orange;
+  /* isolation: isolate; */
+  z-index: 2;
 }
 
 .search-hotel-auth {
@@ -1209,12 +1241,32 @@ grid-template-areas:
 .button-cross {
   position: absolute;
   display: block;
-  right: 45px;
-  top: 60px;
+  width: 15px;
+  height: 15px;
+  right: 47px;
+  top: 62px;
   padding: 20px;
-  background: url(../img/ellipse-for-modal.png) no-repeat center;
+  background: #F2F2F2 no-repeat center;
+  border-radius: 50%;
   cursor: pointer;
 }
+
+.button-cross:hover {
+  background: #E6E6E6 no-repeat center;
+  border-radius: 50%;
+}
+.button-cross:focus {
+  background: #E6E6E6 no-repeat center;
+  border-radius: 50%;
+  border: 2px solid #82B3D3;
+}
+.button-cross:active {
+  background: #E6E6E6 no-repeat center;
+  border-radius: 50%;
+  color: #A1A1A1;
+}
+
+
 
 
 
@@ -1304,7 +1356,6 @@ grid-template-areas:
 
 .tooltip-kinder-text {
   background-color: black;
-  color: white;
   position: absolute;
   width: 216px;
   height: 110px;
@@ -1419,7 +1470,26 @@ display: block;
   border: none;
   font-size: 30px;
   margin: 0;
+  color: #D6D2CF;
 }
+
+.button-minus:hover,
+.button-plus:hover {
+  color:#000000;
+}
+.button-minus:active,
+.button-plus:active {
+  color:#BBB9B8;
+}
+
+.button-minus:focus,
+.button-plus:focus {
+  color:#000000;
+  border: 2px solid #82B3D3;
+}
+
+
+
 
 .button-plus {
   display: block;
@@ -1427,6 +1497,7 @@ display: block;
   border: none;
   font-size: 30px;
   margin: 0;
+  color: #D6D2CF;
 }
 
 .adult {
@@ -1454,12 +1525,3 @@ display: block;
   color:#ffffff;
   text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
