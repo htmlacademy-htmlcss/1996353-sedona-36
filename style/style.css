@@ -299,6 +299,29 @@ position: relative;
     padding-bottom: 35px
 }
 
+/*---------------- .3in1 .frame-square--------------------- */
+.frame-3in1 .frame-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  padding-bottom: 79px;
+  background-color:  rgba(131, 179, 211, 0.12);
+}
+
+.frame-3in1 .frame-square:first-child {
+  background: rgba(104, 162, 202, 0.3) url("../img/house-icon.svg") no-repeat 50% 26%;
+}
+
+.frame-3in1 .frame-square:nth-child(2) {
+  background: rgba(131, 179, 211, 0.12) url("../img/burger-icon.svg") no-repeat 50% 26%;
+}
+
+.frame-3in1 .frame-square:last-child {
+  background: rgba(104, 162, 202, 0.3) url("../img/suvenir.svg") no-repeat 50% 26%;
+}
+
+
 
 /* фон для квадратов .frame-square*/
 .town-block .frame-square,
@@ -310,8 +333,9 @@ position: relative;
 .frame-3in1 .frame-square {
    display: flex;
    padding: 0;
-  justify-content: flex-start;
-  gap: 27px;
+   padding-bottom: 80px;
+   justify-content: flex-end;
+   gap: 27px;
 }
 .icons-comfort {
   margin-top: 80px;
@@ -328,7 +352,7 @@ position: relative;
 
 .true-town .frame-square,
 .bridge .frame-square {
-  background-color: #82B3D3;
+  background: #82B3D3;
 }
 
 /* -------------------frame-square ------------------------ */
@@ -412,25 +436,6 @@ margin: 52px auto 40px;
 border-radius: 5px;
 }
 
-/*---------------- .3in1 .frame-square--------------------- */
-.frame-3in1 .frame-square {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 80px;
-}
-
-.frame-3in1 .frame-square:first-child {
-  background: url("../img/house-icon.svg") no-repeat 50% 26%;
-}
-
-.frame-3in1 .frame-square:nth-child(2) {
-  background: url("../img/burger-icon.svg") no-repeat 50% 26%;
-}
-
-.frame-3in1 .frame-square:last-child {
-  background: url("../img/suvenir.svg") no-repeat 50% 26%;
-}
 
 
 
@@ -1150,7 +1155,7 @@ gap: 10px;
   display: flex;
   align-items: center;
   padding-top: 7px;
-  
+
 }
 
 .rating-star img {
@@ -1520,12 +1525,3 @@ display: block;
   color:#ffffff;
   text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
