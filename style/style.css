@@ -170,7 +170,7 @@ position: relative;
 /*-------------------------- main-------------------- */
 .hero {
   background-color: #fff;
-  background-image: url("../img/Sedona-background.jpg");
+  background-image: url("../img/sedona-background.jpg");
   background-repeat: no-repeat;
   /* height: 767px; */
   margin-bottom: 0;
@@ -340,7 +340,7 @@ position: relative;
   padding-bottom: 100px;
   align-items: center;
   width: 400px;
-  background-color: #82B3D3;
+  /* background: url("img/house-icon.svg") #82B3D3; */
   color: #ffffff;
   margin: 0;
   font-size: 18px;
@@ -412,11 +412,33 @@ margin: 52px auto 40px;
 border-radius: 5px;
 }
 
+/*---------------- .3in1 .frame-square--------------------- */
+.frame-3in1 .frame-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 80px;
+}
+
+.frame-3in1 .frame-square:first-child {
+  background: url("../img/house-icon.svg") no-repeat 50% 26%;
+}
+
+.frame-3in1 .frame-square:nth-child(2) {
+  background: url("../img/burger-icon.svg") no-repeat 50% 26%;
+}
+
+.frame-3in1 .frame-square:last-child {
+  background: url("../img/suvenir.svg") no-repeat 50% 26%;
+}
+
+
+
 /*-------------------*section class="subscribe" ----------------- */
 .subscribe {
   border-top: 1px solid transparent;
   min-height: 415px;
-  background-image: url(../img/Subscribe-fog.png);
+  background-image: url(../img/subscribe-fog.png);
 }
 
 .subscribe-h2 h2 {
@@ -1011,22 +1033,24 @@ border-radius: 5px;
 
 .item {
 box-sizing: border-box;
-display: grid;
-grid-template-columns: repeat(2, 140px);
-grid-template-rows: 212px 28px 20px 36px 38px;
-gap: 16px 20px;
-
-grid-template-areas:
-"image image"
-"name name"
-"p1 p2"
-"button1 button2"
-"stars rating"
-
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.castom-buttons,
+.pracing-hotel,
+.rating-star {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
+
+
 .item img {
-  grid-area: image;
   height: 212px;
   width: 300px;
 }
@@ -1034,8 +1058,7 @@ grid-template-areas:
 .item-name {
   display: flex;
   padding: 0;
-  grid-area: name;
-  padding: 0;
+  padding-top: 7px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1050,7 +1073,7 @@ grid-template-areas:
   display: flex;
   font-family: "PT Sans", sans-serif;
   margin: 0;
-  padding: 0;
+  padding-top: 5px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1060,15 +1083,16 @@ grid-template-areas:
 }
 
 .p_hotel {
- grid-area: p1;
 
 }
 
 .p_price {
- grid-area: p2;
  justify-content: flex-end;
 }
 
+.castom-buttons {
+  padding-top: 6px;
+}
 
 .button-item,
 .button-choose {
@@ -1089,7 +1113,6 @@ grid-template-areas:
 
 .button-item {
   display: flex;
-  grid-area: button1;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -1098,7 +1121,8 @@ grid-template-areas:
 }
 
 .button-choose {
-  grid-area: button2;
+  display: flex;
+  padding: 8px 8px;
   font-size: 14px;
 }
 
@@ -1109,10 +1133,9 @@ grid-template-areas:
 
 
 .rating {
-  grid-area: rating;
   display: flex;
   background-color: #F2F2F2;
-  margin-top: 6px;
+  margin-top: 0;
   align-items: center;
   justify-content: center;
   font-size: 16px;
@@ -1120,12 +1143,14 @@ grid-template-areas:
   line-height: 20px;
   text-transform: uppercase;
   border-radius: 4px;
+  padding-right: 22px;
 }
 
 .rating-star {
-  grid-area: stars;
   display: flex;
   align-items: center;
+  padding-top: 7px;
+  
 }
 
 .rating-star img {
