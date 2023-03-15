@@ -170,7 +170,7 @@ position: relative;
 /*-------------------------- main-------------------- */
 .hero {
   background-color: #fff;
-  background-image: url("../img/sedona-background.jpg");
+  background-image: url("../img/hero-background.jpg");
   background-repeat: no-repeat;
   /* height: 767px; */
   margin-bottom: 0;
