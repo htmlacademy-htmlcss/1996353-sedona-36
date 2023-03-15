@@ -443,7 +443,7 @@ border-radius: 5px;
 .subscribe {
   border-top: 1px solid transparent;
   min-height: 415px;
-  background-image: url(../img/subs-fog.png);
+  background: url(../img/subs-fog.png) no-repeat;
 }
 
 .subscribe-h2 h2 {
